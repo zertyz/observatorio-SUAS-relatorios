@@ -18,12 +18,13 @@ import { PAGES_MENU } from './pages.menu';
     <footer class="al-footer clearfix">
       <div class="al-footer-right">Created with <i class="ion-heart"></i></div>
       <div class="al-footer-main clearfix">
-        <div class="al-copy">&copy; <a href="http://akveo.com">Akveo</a> 2016</div>
+        <div class="al-copy"><a href="http://www.mprj.mp.br/"> MPRJ - MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO</a> 2017
+         &copy; Todos os direitos reservados</div>
         <ul class="al-share clearfix">
-          <li><i class="socicon socicon-facebook"></i></li>
-          <li><i class="socicon socicon-twitter"></i></li>
-          <li><i class="socicon socicon-google"></i></li>
-          <li><i class="socicon socicon-github"></i></li>
+          <li><a href="" target="_blank"><i class="socicon socicon-facebook"></i></a></li>
+          <li><a href="" target="_blank"><i class="socicon socicon-twitter"></i></a></li>
+          <li><a href="" target="_blank"><i class="socicon socicon-google"></i></a>/li>
+          <li><a href="" target="_blank"><i class="socicon socicon-github"></i></a></li>
         </ul>
       </div>
     </footer>

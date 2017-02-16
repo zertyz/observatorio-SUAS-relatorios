@@ -15,6 +15,18 @@ export const PAGES_MENU = [
         }
       },
       {
+        path: 'tela1',
+        data: {
+          menu: {
+            title: 'Início',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
         path: 'editors',
         data: {
           menu: {
@@ -317,8 +329,8 @@ export const PAGES_MENU = [
         path: '',
         data: {
           menu: {
-            title: 'External Link',
-            url: 'http://akveo.com',
+            title: 'MPRJ',
+            url: 'http://www.mprj.mp.br/',
             icon: 'ion-android-exit',
             order: 800,
             target: '_blank'
