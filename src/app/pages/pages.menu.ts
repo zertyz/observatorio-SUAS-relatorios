@@ -27,6 +27,18 @@ export const PAGES_MENU = [
         }
       },
       {
+        path: 'tela2',
+        data: {
+          menu: {
+            title: 'Dados do Município',
+            icon: 'ion-stats-bars',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
         path: 'editors',
         data: {
           menu: {
