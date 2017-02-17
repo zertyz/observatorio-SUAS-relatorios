@@ -60,6 +60,8 @@ npm-debug.log
 
 # IDE #
 .idea/
+*.iml
+.vscode/
 *.swp
 
 # Angular #
