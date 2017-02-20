@@ -59,7 +59,7 @@ $hoverlink: $primary-dark;
 @mixin body-bg() {
   background-color: $body-bg;
 
-  $mainBgUrl: $images-root + 'cc3a9u-de-sinop.png';
+  $mainBgUrl: $images-root + 'cinza.jpg';
 
   &::before {
     content: '';
