@@ -132,3 +132,12 @@ $btn-icon-size: 34px;
 .btn-group.flex-dropdown {
   display: flex;
 }
+
+#scroll {
+  width:250px;
+  height:300px;
+  background-color: transparent;
+  overflow: auto;
+  scrollbar-face-color: blue;
+
+}
