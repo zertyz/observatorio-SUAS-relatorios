@@ -2,6 +2,7 @@ import { NgModule }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgaModule } from '../../theme/nga.module';
+import { DropdownModule, ModalModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { Tela1 } from './tela1.component';
 import { routing }  from './tela1.routing';
@@ -23,8 +24,6 @@ import { TrafficChartService } from './trafficChart/trafficChart.service';
 import { UsersMapService } from './usersMap/usersMap.service';
 
 import {Typography} from "./typography";
-
-import { DropdownModule, ModalModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { Buttons } from "./buttons/buttons.component"
 import { FlatButtons } from './buttons/components/flatButtons';
