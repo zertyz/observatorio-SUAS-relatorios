@@ -23,6 +23,7 @@ import { EButtons } from './buttons/components/equipamentoButtons';
 import { MunicipiosButtons } from './buttons/components/municipiosButtons'
 
 import { DadosMunicipais2 } from './dadosmunicipais2/dadosmunicipais2.component'
+import { RioDeJaneiro } from './riodejaneiro/riodejaneiro.component'
 
 
 
@@ -50,7 +51,8 @@ import { DadosMunicipais2 } from './dadosmunicipais2/dadosmunicipais2.component'
     GroupButtons,
     EButtons,
     MunicipiosButtons,
-    DadosMunicipais2
+    DadosMunicipais2,
+    RioDeJaneiro
 
   ]
 

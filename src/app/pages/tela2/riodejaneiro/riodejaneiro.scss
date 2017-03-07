@@ -1,0 +1,70 @@
+.box {
+  width: 10px;
+  float: right;
+  height: 60px; /*Altura da linha */
+}
+
+.linha-vertical {
+  border-left: 2px solid; /*  Adiciona borda esquerda na div como ser fosse uma linha.*/
+  box-sizing: border-box;
+}
+
+.alinhadir{
+  text-align:right;
+  width:20%;
+
+}
+
+.alinhaesq{
+  text-align: left;
+  width: 20%;
+
+}
+.alinhacentro{
+  font-size: 110%;
+  text-align: center;
+}
+
+.fonte{
+  font-family: "Arial Black", arial-black;
+  font-size: 20px;
+  color: white;
+}
+.dados{
+  font-family: "Arial Black", arial-black;
+  font-size: 20px;
+  color:darkblue;
+
+}
+
+.totalequipamentos{
+  font-family: "Arial Black", arial-black;
+  font-size: 20px;
+  color:darkblue;
+  text-align: center;
+
+}
+.percentual{
+  font-family: "Arial Black", arial-black;
+  font-size: 20px;
+  color: orangered;
+}
+
+.equipamentos{
+  font-family: "Arial Black", arial-black;
+  font-size: 20px;
+  color: #282828;
+
+}
+
+.municipio{
+  font-family: "Arial Black", arial-black;
+  font-size: 20px;
+  color: #282828;
+
+}
+
+hr{
+  border: 1px solid;
+  margin: 1px;
+}

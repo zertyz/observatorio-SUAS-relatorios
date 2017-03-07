@@ -1,21 +1,12 @@
- .box {
-   width: 10%;
-   float: right;
-  height: 10px; /*Altura da linha */
-}
-
-.linha-vertical {
-  border-left: 2px solid; /*  Adiciona borda esquerda na div como ser fosse uma linha.*/
-  box-sizing: border-box;
-}
-
 .alinhadir{
-  width: 10%;
-  float:right;
+  text-align:right;
 }
 
+ .alinhaesq{
+   text-align: left;
+ }
  .alinhacentro{
-   font-size: 115%;
+   font-size: 110%;
    text-align: center;
  }
 
@@ -23,8 +14,7 @@
    font-family: "Arial Black", arial-black;
    font-size: 20px;
    color:darkblue;
-   width: 20%;
-   float:right;
+   text-align:right;
  }
 
  .totalequipamentos{
@@ -43,8 +33,15 @@
 .equipamentos{
   font-family: "Arial Black", arial-black;
   font-size: 20px;
-  color: black;
+  color: #282828;
 
 }
+
+ .municipio{
+   font-family: "Arial Black", arial-black;
+   font-size: 20px;
+   color: #282828;
+
+ }
 
 
