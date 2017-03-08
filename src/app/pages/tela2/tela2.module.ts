@@ -25,6 +25,8 @@ import { MunicipiosButtons } from './buttons/components/municipiosButtons'
 import { DadosMunicipais2 } from './dadosmunicipais2/dadosmunicipais2.component'
 import { RioDeJaneiro } from './riodejaneiro/riodejaneiro.component'
 
+import { ListaEquipamentos } from './listaequipamentos/listaequipamentos.component'
+
 
 
 
@@ -52,7 +54,8 @@ import { RioDeJaneiro } from './riodejaneiro/riodejaneiro.component'
     EButtons,
     MunicipiosButtons,
     DadosMunicipais2,
-    RioDeJaneiro
+    RioDeJaneiro,
+    ListaEquipamentos,
 
   ]
 

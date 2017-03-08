@@ -25,15 +25,23 @@
   text-align: center;
 }
 
-.fonte{
-  font-family: "Arial Black", arial-black;
-  font-size: 20px;
-  color: white;
-}
-.dados{
-  font-family: "Arial Black", arial-black;
-  font-size: 20px;
+.nome-equipamento{
   color:darkblue;
+}
+
+.porte-equipamento{
+  color:darkblue;
+}
+
+
+.parágrafo{
+  color:white;
+}
+
+.parágrafo-alinhadir{
+  color:white;
+  text-align:right;
+  width:20%;
 }
 
 hr{
