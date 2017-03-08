@@ -1,7 +1,7 @@
 
   <div class="button-wrapper">
-    <button type="button" class="btn btn-default btn-raised">INÍCIO</button>
-    <button type="button" class="btn btn-default btn-raised">AJUDA</button>
+    <button type="button" class="btn btn-raised"><b>INÍCIO</b></button>
+    <button type="button" class="btn btn-raised"><b>AJUDA</b></button>
   </div>
 
   <div class="widgets">
@@ -12,13 +12,13 @@
   <div class="row">
     <ba-card class="col-xlg-6 col-xl-0"
           title=" NOVA INSPEÇÃO " baCardClass="small-card">
-      <b><h3>INICIAR UMA NOVA INSPEÇÃO EM UM ESTABELECIMENTO.</h3></b>
+      <b><h4>INICIAR UMA NOVA INSPEÇÃO EM UM ESTABELECIMENTO.</h4></b>
     </ba-card>
 
 
       <ba-card class="col-xlg-6 col-xl-0"
                title="VISUALIZAÇÃO DE INSPEÇÕES - FILTROS PARA SELEÇÃO" baCardClass="small-card">
-        <b> <h3> OS CAMPOS COM (*) SÃO CONSIDERADOS OBRIGATÓRIOS. </h3></b>
+        <b> <h4> OS CAMPOS COM (*) SÃO CONSIDERADOS OBRIGATÓRIOS. </h4></b>
       </ba-card>
     </div>
 
@@ -30,11 +30,23 @@
       <div class="row">
       <ba-card class="col-xl-6 col xl-0"
       title="TIPO DE INSPEÇÃO" baCardClass="small-card">
+        <div class="bs-example">
+          <div class="btn-group-justified">
+            <a href="#" class="btn btn-primary"><b>CRAS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#" class="btn btn-primary"><b>CREAS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#" class="btn btn-primary"><b>CENTRO POP</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          </div>
+        </div>
       </ba-card>
 
 
       <ba-card class="col-xl-6 col xl-0"
                title="EIXOS" baCardClass="small-card">
+        <div class="button-wrapper">
+          <button type="button" class="btn btn-default btn-raised">EQUIPE TÉCNICA</button>
+          <button type="button" class="btn btn-default btn-raised">INFRAESTRUTURA</button>
+          <button type="button" class="btn btn-default btn-raised">PROGRAMAS,PROJETOS,SERVIÇOS E BENEFÍCIOS</button>
+          </div>
       </ba-card>
       </div>
 
@@ -42,18 +54,31 @@
         <div></div>
 
       <ba-card class="col-xl-6 col-xl-0"
-        title="MUNICÍPIO" baCardClass="small-card with-scroll feed-panel">
+        title="MUNICÍPIO" baCardClass="small-card">
+        <div class="button-wrapper">
+          <button type="button" class="btn btn-default btn-raised">ANGRA DOS REIS</button>
+          <button type="button" class="btn btn-default btn-raised">BARRA DO PIRAÍ</button>
+          <button type="button" class="btn btn-default btn-raised">NITERÓI</button>
+          <button type="button" class="btn btn-default btn-raised">SÃO GONÇALO</button>
+          <button type="button" class="btn btn-default btn-raised">RIO DE JANEIRO</button>
+        </div>
       </ba-card>
 
-        <ba-card class="col-xl-6 col xl-0"
+
+        <ba-card class="col-xl-6 col-xl-0"
                  title="EQUIPAMENTO" baCardClass="small-card with-scroll feed-panel">
+          <div class="button-wrapper">
+            <button type="button" class="btn btn-default btn-raised">CRAS BARRA DO PIRAÍ CENTRO</button>
+            <button type="button" class="btn btn-default btn-raised">CRAS BARRA DO PIRAÍ AREAL</button>
+            <button type="button" class="btn btn-default btn-raised">CRAS BARRA DO PIRAÍ AREAL</button>
+          </div>
         </ba-card>
     </div>
 
 
       <div class="button-wrapper">
-        <button type="button" class="btn btn-default btn-raised">LIMPAR FILTRO</button>
-        <button type="button" class="btn btn-default btn-raised">BUSCAR</button>
+        <button type="button" class="btn btn-raised"><b>LIMPAR FILTRO</b></button>
+        <button type="button" class="btn btn-raised"><b>BUSCAR</b></button>
       </div>
 
 
@@ -124,31 +149,35 @@
         <div class="row">
           <div></div>
 
+
+          <div>
           <ba-card class="col-xl-6 col-xl-15"
                    title="FALE CONOSCO" baCardClass="feed-panel">
+            &nbsp;
             <h4> <b> Avenida Marechal Câmara, 370 - 6º Andar - Centro - Rio de Janeiro - RJ - 20.020-080 </b> </h4>
-            <h4> <b>cao.cidadania@mprj.mp.br  2531.9728 | 2220-2462 |2215-1407 - FAX 2240-4653 </b> </h4>
+            <h4> <b>cao.cidadania@mprj.mp.br - 2531-9728 | 2220-2462 | 2215-1407 - FAX 2240-4653 </b> </h4>
 
+
+            <h3 class="card-title">_____________________________________________________________________________________________________________</h3>
+
+            <label class="col-sm-2 form-control-label" for="inputEmail3"><b>NOME</b></label>
+              <div class="col-sm-10">
+              </div>
             &nbsp;
-            &nbsp;
-
-            <tr>
-            <b>NOME</b>
-            </tr>
-            &nbsp;
-
-
-          <input class="form-control" id="inputFirstName" placeholder="Seu primeiro nome..." type="text">
+            <input class="form-control" id="inputFirstName" placeholder="Seu primeiro nome..." type="text">
             &nbsp;
 
-          <tr>
-          <b>E-MAIL</b>
-          </tr>
+            <div class="row">
+            </div>
+
+
+            <label class="col-sm-2 form-control-label" for="inputEmail3"><b>E-MAIL</b></label>
+            <div class="col-sm-10">
+            </div>
           &nbsp;
           <input class="form-control" id="inputFirstName" placeholder="Fulano.tal@mprj.mp.br" type="text">
           </ba-card>
-
-
+          </div>
 
           <div>
           <ba-card class="col-xl-6 col xl-0"
@@ -170,8 +199,8 @@
         </div>
 
 
-
-          <div class="form-group">
-            <textarea class="form-control" placeholder="Message"></textarea>
+          <div class="form-group row">
+                        <div class="col-sm-10">
+              <input class="form-control" id="inputEmail3" placeholder="Email" type="email">
+            </div>
           </div>
-
