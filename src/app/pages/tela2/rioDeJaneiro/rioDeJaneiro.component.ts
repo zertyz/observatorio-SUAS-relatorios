@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
 
 @Component (
   {
-    selector:'riodejaneiro',
-    styleUrls: ['./riodejaneiro.scss'],
-    templateUrl: './riodejaneiro.html'
+    selector:'rio-de-janeiro',
+    styleUrls: ['./rioDeJaneiro.scss'],
+    templateUrl: './rioDeJaneiro.html'
   })
 
 export class RioDeJaneiro {

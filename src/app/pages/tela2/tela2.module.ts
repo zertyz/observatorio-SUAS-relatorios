@@ -22,10 +22,18 @@ import { GroupButtons } from './buttons/components/groupButtons';
 import { EButtons } from './buttons/components/equipamentoButtons';
 import { MunicipiosButtons } from './buttons/components/municipiosButtons'
 
-import { DadosMunicipais2 } from './dadosmunicipais2/dadosmunicipais2.component'
-import { RioDeJaneiro } from './riodejaneiro/riodejaneiro.component'
+import { DadosMunicipais2 } from './dadosMunicipais2/dadosMunicipais2.component'
+import { RioDeJaneiro } from './rioDeJaneiro/rioDeJaneiro.component'
 
-import { ListaEquipamentos } from './listaequipamentos/listaequipamentos.component'
+import { ListaEquipamentos } from './listaEquipamentos/listaEquipamentos.component'
+
+import { PieChart } from './pieChart/pieChart.component'
+import { PieChartService } from './pieChart/pieChart.service';
+
+import { Pse } from './pse/pse.component';
+import { PseService } from './pse/pse.service';
+
+
 
 
 
@@ -56,7 +64,13 @@ import { ListaEquipamentos } from './listaequipamentos/listaequipamentos.compone
     DadosMunicipais2,
     RioDeJaneiro,
     ListaEquipamentos,
+    PieChart,
+    Pse,
 
+  ],
+  providers: [
+    PieChartService,
+    PseService,
   ]
 
 })

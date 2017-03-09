@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
 
 @Component (
   {
-    selector:'dadosmunicipais2',
-    styleUrls: ['./dadosmunicipais2.scss'],
-    templateUrl: './dadosmunicipais2.html'
+    selector:'dados-municipais2',
+    styleUrls: ['./dadosMunicipais2.scss'],
+    templateUrl: './dadosMunicipais2.html'
   })
 
 export class DadosMunicipais2 {

@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
 @Component (
   {
     selector:'lista-equipamentos',
-    styleUrls: ['./listaequipamentos.scss'],
-    templateUrl: './listaequipamentos.html'
+    styleUrls: ['./listaEquipamentos.scss'],
+    templateUrl: './listaEquipamentos.html'
   })
 
 export class ListaEquipamentos {
