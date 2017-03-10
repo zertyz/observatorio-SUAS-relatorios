@@ -1,8 +1,11 @@
+/**
+ * Created by tais on 10/03/17.
+ */
 import {Injectable} from '@angular/core';
 import {BaThemeConfigProvider, colorHelper} from '../../../theme';
 
 @Injectable()
-export class PseService {
+export class PsbService {
 
   constructor(private _baConfig:BaThemeConfigProvider) {
   }

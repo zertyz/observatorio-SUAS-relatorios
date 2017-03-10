@@ -1,21 +1,24 @@
+/**
+ * Created by tais on 10/03/17.
+ */
 import {Component} from '@angular/core';
 
-import {PieChartService} from './pieChart.service';
+import {PsbService} from './psb.service';
 
 import 'easy-pie-chart/dist/jquery.easypiechart.js';
-import 'style-loader!./pieChart.scss';
+import 'style-loader!./psb.scss';
 
 @Component({
-  selector: 'pie-chart',
-  templateUrl: './pieChart.html'
+  selector: 'psb',
+  templateUrl: './psb.html',
 })
 // TODO: move easypiechart to component
-export class PieChart {
+export class Psb {
 
   public charts: Array<Object>;
   private _init = false;
 
-  constructor(private _pieChartService: PieChartService) {
+  constructor(private _pieChartService: PsbService) {
     this.charts = this._pieChartService.getData();
   }
 

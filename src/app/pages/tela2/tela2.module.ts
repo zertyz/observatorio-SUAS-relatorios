@@ -21,22 +21,23 @@ import { DropdownButtons } from './buttons/components/dropdownButtons';
 import { GroupButtons } from './buttons/components/groupButtons';
 import { EButtons } from './buttons/components/equipamentoButtons';
 import { MunicipiosButtons } from './buttons/components/municipiosButtons'
+import { AnoButtons } from './buttons/components/anoButtons';
 
 import { DadosMunicipais2 } from './dadosMunicipais2/dadosMunicipais2.component'
 import { RioDeJaneiro } from './rioDeJaneiro/rioDeJaneiro.component'
 
 import { ListaEquipamentos } from './listaEquipamentos/listaEquipamentos.component'
 
-import { PieChart } from './pieChart/pieChart.component'
-import { PieChartService } from './pieChart/pieChart.service';
-
 import { Pse } from './pse/pse.component';
 import { PseService } from './pse/pse.service';
 
+import { Psb } from './psb/psb.component';
+import { PsbService } from './psb/psb.service';
 
+import { Programas } from './programas/programas.component';
+import { ProgramasService } from './programas/programas.service';
 
-
-
+import { IndicadoresSociais } from'./indicadoresSociais/indicadoresSociais.component';
 
 
 @NgModule({
@@ -64,13 +65,17 @@ import { PseService } from './pse/pse.service';
     DadosMunicipais2,
     RioDeJaneiro,
     ListaEquipamentos,
-    PieChart,
     Pse,
+    Psb,
+    Programas,
+    IndicadoresSociais,
+    AnoButtons,
 
   ],
   providers: [
-    PieChartService,
     PseService,
+    PsbService,
+    ProgramasService,
   ]
 
 })

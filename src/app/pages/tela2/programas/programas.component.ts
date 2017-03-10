@@ -1,21 +1,24 @@
+/**
+ * Created by tais on 10/03/17.
+ */
 import {Component} from '@angular/core';
 
-import {PseService} from './pse.service';
+import {ProgramasService} from './programas.service';
 
 import 'easy-pie-chart/dist/jquery.easypiechart.js';
-import 'style-loader!./pse.scss';
+import 'style-loader!./programas.scss';
 
 @Component({
-  selector: 'pse',
-  templateUrl: './pse.html',
+  selector: 'programas',
+  templateUrl: './programas.html',
 })
 // TODO: move easypiechart to component
-export class Pse {
+export class Programas {
 
   public charts: Array<Object>;
   private _init = false;
 
-  constructor(private _pieChartService: PseService) {
+  constructor(private _pieChartService: ProgramasService) {
     this.charts = this._pieChartService.getData();
   }
 
