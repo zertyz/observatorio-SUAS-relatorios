@@ -1,27 +1,27 @@
 <div class="col-xl-2 col-lg-3 col-md-3">
-<h3> PSE </h3>
-TOTAL DE RECURSOS <p> 146.835,10 </p> <hr>
-UTILIZADO <p> 38.334,04 </p> <hr>
-NÃO UTILIZADO (OMISSÃO OU BLOQUEIO) <p> 108.501,06 </p>
+  <h3> PSE </h3>
+  TOTAL DE RECURSOS <p> 146.835,10 </p> <hr>
+  UTILIZADO <p> 38.334,04 </p> <hr>
+  NÃO UTILIZADO (OMISSÃO OU BLOQUEIO) <p> 108.501,06 </p>
 </div>
 
 <div class="col">
-<div class="row pie-charts">
-  <div *ngFor="let chart of charts" class="pie-chart-item-container col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+  <div class="row pie-charts">
+    <div *ngFor="let chart of charts" class="pie-chart-item-container col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
 
-    <div class="pie-chart-item">
-      <div class="chart" [attr.data-rel]="chart.color" data-percent="60">
-        <span class="percent"></span>
+      <div class="pie-chart-item">
+        <div class="chart" [attr.data-rel]="chart.color" data-percent="60">
+          <span class="percent"></span>
+        </div>
+        <div class="description">
+          <div>{{ chart.description }}</div>
+          <div class="description-stats">{{ chart.stats }}</div>
+        </div>
+        <i class="chart-icon i-{{ chart.icon }}"></i>
       </div>
-      <div class="description">
-        <div>{{ chart.description }}</div>
-        <div class="description-stats">{{ chart.stats }}</div>
-      </div>
-      <i class="chart-icon i-{{ chart.icon }}"></i>
+
     </div>
-
   </div>
 </div>
-</div>
 
-<hr>
+

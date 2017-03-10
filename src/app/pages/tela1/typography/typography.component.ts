@@ -3,7 +3,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'typography',
-  styles: [],
+  styleUrls: ['./typography.scss'],
   templateUrl: './typography.html',
 })
 export class Typography {
