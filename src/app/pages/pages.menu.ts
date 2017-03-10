@@ -3,7 +3,7 @@ export const PAGES_MENU = [
     path: 'pages',
     children: [
       {
-        path: 'dashboard',
+        path: '',
         data: {
           menu: {
             title: 'Dashboard',

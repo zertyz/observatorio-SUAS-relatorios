@@ -27,7 +27,7 @@ export class TrafficChartService {
         order: 4,
       }, {
         value: 1000,
-        color: dashboardColors.silverTree,
+        color: dashboardColors.b,
         highlight: colorHelper.shade(dashboardColors.silverTree, 15),
         label: 'Referral Traffic',
         percentage: 70,
