@@ -1,5 +1,5 @@
 /**
- * Created by tais on 10/03/17.
+ * Created by tais on 13/03/17.
  */
 import { Component } from '@angular/core';
 
@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
     templateUrl: './indicadoresSociais.html'
   })
 
-export class IndicadoresSociais{
+export class IndicadoresSociais {
   constructor()
   {}
 }

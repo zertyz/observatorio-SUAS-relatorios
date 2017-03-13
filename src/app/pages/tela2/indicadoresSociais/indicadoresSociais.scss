@@ -1,13 +1,28 @@
-.alinhadir{
-  text-align:right;
+.alinhacentro{
+  width:70%;
+  text-align:center;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
 }
 
-.alinhaesq{
-  text-align: left;
+.alinhacentro2{
+  text-align:right;
+  width: 61%;
+  font-size: 13px;
+  color: white;
 }
-.alinhacentro{
-  font-size: 110%;
-  text-align: center;
+
+.fonte{
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.fonte2{
+  font-size: 13px;
+  color:white;
+  text-align: right;
 }
 
 .dados{
@@ -17,34 +32,23 @@
   text-align:right;
 }
 
-.totalequipamentos{
-  font-family: "Arial Black", arial-black;
-  font-size: 20px;
-  color:darkblue;
-  text-align: center;
 
-}
 .percentual{
   font-family: "Arial Black", arial-black;
-  font-size: 20px;
+  font-size: 15px;
   color: orangered;
+  text-align: right;
 }
 
-.equipamentos{
-  font-family: "Arial Black", arial-black;
-  font-size: 20px;
-  color: #282828;
 
-}
-
-.municipio{
-  font-family: "Arial Black", arial-black;
-  font-size: 20px;
-  color: #282828;
-
-}
 
 hr{
-  color:white;
+width: 200%;
+  color: white;
+
+}
+
+.linha-horizontal{
+  width:100%;
 }
 
