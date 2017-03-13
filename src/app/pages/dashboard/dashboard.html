@@ -1,5 +1,6 @@
+<hr color="white">
 
-  <div class="button-wrapper">
+<div class="button-wrapper">
     <button type="button" class="btn btn-raised"><b>INÍCIO</b></button>
     <button type="button" class="btn btn-raised"><b>AJUDA</b></button>
   </div>
@@ -10,16 +11,17 @@
   <div class="row">
   </div>
 
+
   <div class="row">
     <ba-card class="col-xlg-6 col-xl-0"
           title=" NOVA INSPEÇÃO " baCardClass="small-card">
-      <b><h4>INICIAR UMA NOVA INSPEÇÃO EM UM ESTABELECIMENTO.</h4></b>
+      <b><h4> <td> <img src="{{ ( 'inspeção'| baProfilePicture ) }}" width="60" height="55">INICIAR UMA NOVA INSPEÇÃO EM UM ESTABELECIMENTO.</h4></b>
     </ba-card>
 
 
       <ba-card class="col-xlg-6 col-xl-0"
                title="VISUALIZAÇÃO DE INSPEÇÕES - FILTROS PARA SELEÇÃO" baCardClass="small-card">
-        <b> <h4> OS CAMPOS COM (*) SÃO CONSIDERADOS OBRIGATÓRIOS. </h4></b>
+        <b> <h4> <img src="{{ ( 'filtro'| baProfilePicture ) }}" width="45" height="45">OS CAMPOS COM (*) SÃO CONSIDERADOS OBRIGATÓRIOS.</h4></b>
       </ba-card>
     </div>
 
@@ -87,6 +89,7 @@
     <table class="table table-hover">
       <thead>
       <tr class="black-muted-bg">
+        <td> <img src="{{ ( 'resultados'| baProfilePicture ) }}" width="45" height="35">
         <td class="-"></td>
         <td class="-"></td>
         <td class="-"></td>
@@ -94,8 +97,8 @@
         <td class="-"></td>
         <td class="-"></td>
         <td class="-"></td>
-        <td class="-"></td>
-        <td class="-"></td>
+
+
         <td> <b> <h2> RESULTADOS DA CONSULTA </h2> </b>  </td>
       </tr>
       </thead>
@@ -127,24 +130,21 @@
 
         <ba-card class="col-xlg-6 col-xl-0"
                  title="QUESTÕES" baCardClass="small-card">
-          <h3> <b> A equipe técnica está em conformidade com a nobrh?</b> </h3>
+          <h3> <b> <td> <img src="{{ ( 'questão'| baProfilePicture ) }}" width="45" height="45"> A equipe técnica está em conformidade com a nobrh?</b> </h3>
         </ba-card>
 
         <ba-card class="col-xlg-6 col-xl-0"
                  title="REGRA DE COLORAÇÃO" baCardClass="small-card">
-          <h3> <b> Se o CRAS for de porte grande (5000 famílias) e a quantidade de técnicos de nível superior for menor
+          <h4><b><img src="{{ ( 'paleta'| baProfilePicture ) }}" width="45" height="35"> Se o CRAS for de porte grande (5000 famílias) e a quantidade de técnicos de nível superior for menor
           que 2 assistentes sociais, 1 psicólogo, e 1 profissional que compõe o SUAS ou a quantidade de técnicos
-            de nível médio for menor que 4: Vermelho.</b> </h3>
+            de nível médio for menor que 4: Vermelho. </b></h4>
         </ba-card>
 
 
         <ba-card class="col-xlg-6 col-xl-0"
                  title="LEGISLAÇÃO" baCardClass="small-card">
-
-          <h3> <b> Resolução nobrh/suas nº 01 de 25 de janeiro de 2007. </b> </h3>
+                    <h3><b><img src="{{ ( 'legislacao'| baProfilePicture ) }}" width="45" height="45"> Resolução nobrh/suas nº 01 de 25 de janeiro de 2007. </b> </h3>
         </ba-card>
-
-
 
 
 
@@ -351,8 +351,8 @@
             </tr>
             </tbody>
           </table>
+          <hr color="white">
         </div>
-        &nbsp;
 
 
         <div class="row">
@@ -363,9 +363,8 @@
           <div>
           <ba-card class="col-xl-6 col-xl-15"
                    title="FALE CONOSCO" baCardClass="feed-panel">
-            &nbsp;
-            <h4> <b> Avenida Marechal Câmara, 370 - 6º Andar - Centro - Rio de Janeiro - RJ - 20.020-080 </b> </h4>
-            <h4> <b>cao.cidadania@mprj.mp.br - 2531-9728 | 2220-2462 | 2215-1407 - FAX 2240-4653 </b> </h4>
+            <h4> <b> <img src="{{ ( 'fale conosco'| baProfilePicture ) }}" width="45" height="45"> Avenida Marechal Câmara, 370 - 6º Andar - Centro - Rio de Janeiro - RJ - 20.020-080 </b> </h4>
+            <h4> <b> cao.cidadania@mprj.mp.br - 2531-9728 | 2220-2462 | 2215-1407 - FAX 2240-4653 </b> </h4>
 
 
             <h3 class="card-title">_____________________________________________________________________________________________________________</h3>
@@ -409,7 +408,7 @@
           <ba-card class="col-xl-6 col xl-0"
           title="PERGUNTAS FREQUENTES" baCardClass="">
 
-            <h3><b><i>O Cadastro Único para Programa Sociais do Governo Federal é um instrumento que identifica e caracteriza as famílias
+            <h3><b><i> <img src="{{ ( 'faq'| baProfilePicture ) }}" width="50" height="45">  O Cadastro Único para Programa Sociais do Governo Federal é um instrumento que identifica e caracteriza as famílias
               com renda mensal de até meio salário mínimo por pessoa ou de três salários mínimos no total.
             Dessa forma, o Cadastro Único possibilita conhecer a realidade socioeconômica dessas famílias, trazendo informações
             de todo o núcleo familiar, das características do domicílio, das formas de acesso a serviços públicos essenciais e também
@@ -449,5 +448,4 @@
                 </div>
               </div>
             </div>
-
 
