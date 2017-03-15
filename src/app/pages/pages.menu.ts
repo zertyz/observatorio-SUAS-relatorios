@@ -31,7 +31,7 @@ export const PAGES_MENU = [
         data: {
           menu: {
             title: 'Dados do Município',
-            icon: 'ion-stats-bars',
+            icon: 'ion-connection-bars',
             selected: false,
             expanded: false,
             order: 0

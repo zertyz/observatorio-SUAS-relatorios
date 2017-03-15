@@ -39,6 +39,8 @@ import { ProgramasService } from './programas/programas.service';
 
 import { IndicadoresSociais } from'./indicadoresSociais/indicadoresSociais.component';
 
+import { DadosMunicipais } from './dadosMunicipais/dadosMunicipais.component';
+
 
 @NgModule({
   imports: [
@@ -70,6 +72,7 @@ import { IndicadoresSociais } from'./indicadoresSociais/indicadoresSociais.compo
     Programas,
     IndicadoresSociais,
     AnoButtons,
+    DadosMunicipais,
 
   ],
   providers: [
