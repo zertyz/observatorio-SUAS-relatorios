@@ -1,17 +1,14 @@
+.alinhadir{
+  float:right;
+}
+
 .alinhacentro{
-  width:70%;
-  text-align:center;
-  font-size: 15px;
-  font-weight: bold;
+  text-align:right;
+  width: 69%;
+  font-size: 10px;
   color: white;
 }
 
-.alinhacentro2{
-  text-align:right;
-  width: 61%;
-  font-size: 13px;
-  color: white;
-}
 
 .fonte{
   font-size: 15px;
@@ -20,15 +17,19 @@
 }
 
 .fonte2{
-  font-size: 13px;
+  font-size: 10px;
   color:white;
   text-align: right;
+}
+
+.negrito{
+font-weight: bold;
 }
 
 .dados{
   font-family: "Arial Black", arial-black;
   font-size: 20px;
-  color:darkblue;
+  color:midnightblue;
   text-align:right;
 }
 
@@ -36,7 +37,7 @@
 .percentual{
   font-family: "Arial Black", arial-black;
   font-size: 15px;
-  color: orangered;
+  color: orange;
   text-align: right;
 }
 
