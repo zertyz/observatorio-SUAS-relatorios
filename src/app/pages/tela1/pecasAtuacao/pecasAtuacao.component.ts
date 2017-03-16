@@ -5,6 +5,7 @@ import {PecasAtuacaoService} from './pecasAtuacao.service';
 
 @Component({
   selector: 'pecasAtuacao-table',
+  styleUrls: ['./pecasAtuacao.scss'],
   templateUrl: './pecasAtuacao.html',
 })
 export class PecasAtuacaoTable {

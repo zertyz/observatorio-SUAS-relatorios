@@ -5,6 +5,7 @@ import {LegislacaoService} from './legislacao.service';
 
 @Component({
   selector: 'legislacao-table',
+  styleUrls: ['./legislacao.scss'],
   templateUrl: './legislacao.html',
 })
 export class LegislacaoTable {

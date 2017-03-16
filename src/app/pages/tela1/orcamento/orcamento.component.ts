@@ -5,6 +5,7 @@ import {OrcamentoService} from './orcamento.service';
 
 @Component({
   selector: 'orcamento-table',
+  styleUrls: ['./orcamento.scss'],
   templateUrl: './orcamento.html',
 })
 export class OrcamentoTable {
