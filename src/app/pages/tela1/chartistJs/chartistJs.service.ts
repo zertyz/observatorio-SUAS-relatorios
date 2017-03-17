@@ -9,7 +9,7 @@ export class ChartistJsService {
     simpleLineOptions: {
       color: this._baConfig.get().colors.defaultText,
       fullWidth: true,
-      height: '300px',
+      height: '200px',
       chartPadding: {
         right: 40
       }

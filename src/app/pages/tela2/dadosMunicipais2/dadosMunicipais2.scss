@@ -4,42 +4,50 @@
 
  .alinhaesq{
    text-align: left;
+
  }
  .alinhacentro{
-   font-size: 110%;
    text-align: center;
+   width: 20px;
+ }
+
+ table{
+   font-size: 10px;
+   text-align: center;
+
  }
 
  .dados{
    font-family: "Arial Black", arial-black;
-   font-size: 20px;
-   color:midnightblue;
+   font-size: 15px;
    text-align:right;
+   color:midnightblue;
  }
 
  .totalequipamentos{
    font-family: "Arial Black", arial-black;
-   font-size: 20px;
+   font-size: 15px;
    color:midnightblue;
    text-align: center;
 
  }
 .percentual{
   font-family: "Arial Black", arial-black;
-  font-size: 20px;
+  font-size: 15px;
   color: orange;
 }
 
 .equipamentos{
   font-family: "Arial Black", arial-black;
-  font-size: 20px;
+  font-size: 15px;
   color: #282828;
+  text-align: center;
 
 }
 
  .municipio{
    font-family: "Arial Black", arial-black;
-   font-size: 20px;
+   font-size: 15px;
    color: #282828;
 
  }
@@ -47,4 +55,7 @@
 
 hr{
   border: 1px solid;
+  margin-top: auto;
+  margin-left: 0%;
+  width:70%;
 }
