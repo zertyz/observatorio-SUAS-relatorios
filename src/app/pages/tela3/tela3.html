@@ -1,0 +1,444 @@
+<hr color="white">
+
+<div class="button-wrapper">
+  <button type="button" class="btn btn-raised"><b>INÍCIO</b></button>
+  <button type="button" class="btn btn-raised"><b>AJUDA</b></button>
+</div>
+
+&nbsp;
+<div class="widgets">
+
+  <div class="row">
+  </div>
+
+
+  <div class="row">
+    <ba-card class="col-xlg-6 col-xl-0"
+             title=" NOVA INSPEÇÃO " baCardClass="small-card">
+      <b><h4> <td> <img src="{{ ( 'inspeção'| baProfilePicture ) }}" width="60" height="55">&nbsp;INICIAR UMA NOVA INSPEÇÃO EM UM ESTABELECIMENTO.</h4></b>
+    </ba-card>
+
+
+    <ba-card class="col-xlg-6 col-xl-0"
+             title="VISUALIZAÇÃO DE INSPEÇÕES - FILTROS PARA SELEÇÃO" baCardClass="small-card">
+      <b> <h4> <img src="{{ ( 'filtro'| baProfilePicture ) }}" width="45" height="45">&nbsp;&nbsp;OS CAMPOS COM (*) SÃO CONSIDERADOS OBRIGATÓRIOS.</h4></b>
+    </ba-card>
+  </div>
+
+  <div class="row">
+    <div></div>
+
+
+
+    <div class="container">
+      <div class="col-md-6">
+        <h3><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="{{ ( 'Calendário'| baProfilePicture ) }}" width="45" height="45"> INÍCIO*</b></h3>
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker6'>
+            <input type='text' class="form-control" />
+            <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker7'>
+          </div>
+        </div>
+      </div>
+    </div>
+    &nbsp;
+
+    <script type="text/javascript">
+      $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+          useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+          $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+          $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+      });
+    </script>
+
+
+    <div class="row">
+      <ba-card class="col-xl-6 col xl-0"
+               title="TIPO DE INSPEÇÃO*" baCardClass="small-card">
+        <div class="bs-example">
+          <div class="btn-group-justified">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="btn btn-primary"><b>CRAS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#" class="btn btn-primary"><b>CREAS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#" class="btn btn-primary"><b>CENTRO POP</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          </div>
+        </div>
+      </ba-card>
+
+
+      <ba-card class="col-xl-6 col xl-0"
+               title="EIXOS*" baCardClass="small-card">
+        <div class="button-wrapper">
+          <button type="button" class="btn btn-default btn-raised">EQUIPE TÉCNICA</button>
+          <button type="button" class="btn btn-default btn-raised">INFRAESTRUTURA</button>
+          <button type="button" class="btn btn-default btn-raised">PROGRAMAS,PROJETOS,SERVIÇOS E BENEFÍCIOS</button>
+        </div>
+      </ba-card>
+    </div>
+
+    <div class="row">
+      <div></div>
+
+      <ba-card class="col-xl-6 col-xl-0"
+               title="MUNICÍPIO*" baCardClass="small-card">
+        <div class="button-wrapper">
+          <button type="button" class="btn btn-default btn-raised">ANGRA DOS REIS</button>
+          <button type="button" class="btn btn-default btn-raised">BARRA DO PIRAÍ</button>
+          <button type="button" class="btn btn-default btn-raised">NITERÓI</button>
+          <button type="button" class="btn btn-default btn-raised">SÃO GONÇALO</button>
+          <button type="button" class="btn btn-default btn-raised">RIO DE JANEIRO</button>
+        </div>
+      </ba-card>
+
+
+      <ba-card class="col-xl-6 col-xl-0"
+               title="EQUIPAMENTO*" baCardClass="small-card with-scroll feed-panel">
+        <div class="button-wrapper">
+          <button type="button" class="btn btn-default btn-raised">CRAS BARRA DO PIRAÍ CENTRO</button>
+          <button type="button" class="btn btn-default btn-raised">CRAS BARRA DO PIRAÍ AREAL</button>
+          <button type="button" class="btn btn-default btn-raised">CRAS BARRA DO PIRAÍ AREAL</button>
+        </div>
+      </ba-card>
+    </div>
+
+
+    <div class="button-wrapper">
+      <button type="button" class="btn btn-raised"><b>LIMPAR FILTRO</b></button>
+      <button type="button" class="btn btn-raised"><b>BUSCAR</b></button>
+    </div>
+
+    &nbsp;
+    <div class="horizontal-scroll">
+      <table class="table table-hover">
+        <thead>
+        <tr class="black-muted-bg">
+          <td> <img src="{{ ( 'resultados'| baProfilePicture ) }}" width="45" height="35">
+          <td class="-"></td>
+          <td class="-"></td>
+          <td class="-"></td>
+          <td class="-"></td>
+          <td class="-"></td>
+          <td class="-"></td>
+          <td class="-"></td>
+
+
+          <td> <b> <h2> RESULTADOS DA CONSULTA </h2> </b>  </td>
+        </tr>
+        </thead>
+      </table>
+    </div>
+
+
+    <ba-card title="QUESTÕES" baCardClass="with-scroll heading-widget">
+
+      <div class="section-block">
+        <h2><b>  <span class="label label-danger"> EIXO EQUIPE TÉCNICA. </span></b></h2>
+        <h4> <b> A equipe técnica está em conformidade com a nobrh? </b> </h4>
+        <h4> <b> São promovidas atividades de capacitação para equipe? </b> </h4>
+      </div>
+
+
+      <div class="section-block">
+        <h2><b> <span class="label label-danger"> EIXO PROGRAMAS, PROJETOS, SERVIÇOS E BENEFÍCIOS. </span></b></h2>
+        <h4> <b> O paif funciona conforme a resolução cit 04/2011?</b></h4>
+        <h4> <b>Existe regulamentação dos benefícios eventuais? </b></h4>
+        <h4> <b>A frequência das visitas domiciliares é compatível com a necessidade dos usuários?</b></h4>
+      </div>
+
+      <div class="section-block">
+        <h2><b> <span class="label label-danger"> EIXO INFRAESTRUTURA.</span></b></h2>
+        <h4> <b> O equipamento possui acessibilidade conforme as normas estabelecidas pela abnt(nbr 9050)? </b></h4>
+      </div>
+
+
+      <ba-card class="col-xlg-6 col-xl-0"
+               title="QUESTÕES" baCardClass="small-card">
+        <h3> <b> <td> <img src="{{ ( 'questão'| baProfilePicture ) }}" width="45" height="45"> A equipe técnica está em conformidade com a nobrh?</b> </h3>
+      </ba-card>
+
+      <ba-card class="col-xlg-6 col-xl-0"
+               title="REGRA DE COLORAÇÃO" baCardClass="small-card">
+        <h4><b><img src="{{ ( 'paleta'| baProfilePicture ) }}" width="45" height="35"> Se o CRAS for de porte grande (5000 famílias) e a quantidade de técnicos de nível superior for menor
+          que 2 assistentes sociais, 1 psicólogo, e 1 profissional que compõe o SUAS ou a quantidade de técnicos
+          de nível médio for menor que 4: Vermelho. </b></h4>
+      </ba-card>
+
+
+      <ba-card class="col-xlg-6 col-xl-0"
+               title="LEGISLAÇÃO" baCardClass="small-card">
+        <h3><b><img src="{{ ( 'legislacao'| baProfilePicture ) }}" width="45" height="45"> Resolução nobrh/suas nº 01 de 25 de janeiro de 2007. </b> </h3>
+      </ba-card>
+
+
+
+      <div class="horizontal-scroll">
+        <table class="table table-hover">
+          <thead>
+          <tr class="black-muted-bg">
+            <td><h2><b>CRAS - BARRA DO PIRAÍ - CENTRO </b></h2></td>
+          </tr>
+          </thead>
+        </table>
+      </div>
+
+
+
+      <div class="bs-example">
+        <table class="table table-condensed">
+          <thead>
+          <tr>
+            <th></th>
+            <th><b>JANEIRO/2016</b></th>
+            <th><b>MARÇO/2016</b></th>
+            <th><b>MAIO/2016</b></th>
+
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+
+          </tr>
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+
+          </tr>
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+
+          </tr>
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+
+          </tr>
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+
+          </tr>
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="horizontal-scroll">
+        <table class="table table-hover">
+          <thead>
+          <tr class="black-muted-bg">
+            <td><h2><b>CRAS - BARRA DO PIRAÍ - CALIFÓRNIA DA BARRA </b></h2></td>
+          </tr>
+          </thead>
+        </table>
+      </div>
+
+
+      <div class="bs-example">
+        <table class="table table-condensed">
+          <thead>
+          <tr>
+            <th></th>
+            <th><b>JANEIRO/2016</b></th>
+            <th><b>MARÇO/2016</b></th>
+            <th><b>MAIO/2016</b></th>
+
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="horizontal-scroll">
+        <table class="table table-hover">
+          <thead>
+          <tr class="black-muted-bg">
+            <td><h2><b>CRAS - BARRA DO PIRAÍ - VARGEM ALEGRE </b></h2></td>
+          </tr>
+          </thead>
+        </table>
+      </div>
+
+
+      <div class="bs-example">
+        <table class="table table-condensed">
+          <thead>
+          <tr>
+            <th></th>
+            <th><b>JANEIRO/2016</b></th>
+            <th><b>MARÇO/2016</b></th>
+            <th><b>MAIO/2016</b></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+          </tr>
+          </tbody>
+        </table>
+        <hr color="white">
+      </div>
+
+
+
+
+
+      <div class="row">
+        <ba-card class="col-xl-3 col-lg-6 col-md-6"
+                 title="TIPO DE INSPEÇÃO*" baCardClass="">
+          <b><span class="label label-danger">EIXO EQUIPE TÉCNICA</span></b><hr color="white">
+          <p></p>
+          <b>A EQUIPE TÉCNICA ESTÁ EM CONFORMIDADE COM A NOBRH?</b> <hr color="white">
+          <p></p>
+          <b>SÃO PROMOVIDAS ATIVIDADES DE CAPACITAÇÃO PARA EQUIPE?</b> <hr color="white">
+          <p></p>
+          <b><span class="label label-danger">EIXO, PROGRAMAS, PROJETOS, SERVIÇOS E BENEFÍCIOS.</span></b> <hr color="white">
+          <p></p>
+          <b>O PAIF FUNCIONA CONFORME A RESOLUÇÃO CIT 04/2011?</b><hr color="white">
+          <p></p>
+          <b>EXISTE REGULAMENTAÇÃO DOS BENEFÍCIOS EVENTUAIS?</b><hr color="white">
+          <p></p>
+          <b>A FREQUÊNCIA DAS VISITAS DOMICILIARES É COMPATÍVEL COM A NECESSIDADE DOS USUÁRIOS?</b><hr color="white">
+          <p></p>
+          <b><span class="label label-danger">EIXO INFRAESTRUTURA</span></b><hr color="white">
+          <p></p>
+          <b>O EQUIPAMENTO POSSUI ACESSIBILIDADE CONFORME AS NORMAS ESTABELECIDAS PELA ABNT(NBR 9050)?</b><hr color="white">
+
+        </ba-card>
+
+
+        <ba-card class="col-xl-3 col-lg-6 col-md-6"
+                 title="CRAS - BARRA DO PIRAÍ - CENTRO" baCardClass="medium-card">
+          <div class="button-wrapper">
+            JANEIRO/2016 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MARÇO/2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MAIO/2016
+          </div>
+        </ba-card>
+
+        <ba-card class="col-xl-3 col-lg-6 col-md-6"
+                 title="CRAS - BARRA DO PIRAÍ - CALIFÓRNIA DA BARRA" baCardClass="medium-card">
+          <div class="button-wrapper">
+          </div>
+        </ba-card>
+
+        <ba-card class="col-xl-3 col-lg-6 col-md-6"
+                 title="CRAS - BARRA DO PIRAÍ - VARGEM ALEGRE" baCardClass="medium-card">
+          <div class="button-wrapper">
+          </div>
+        </ba-card>
+
+
+      <div class="row">
+        <div></div>
