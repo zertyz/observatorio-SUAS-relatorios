@@ -8,17 +8,27 @@
     <input id="searchInput" type="text" placeholder="Procurar por...">
   </div>
 
-  <div class="user-profile clearfix">
-    <div class="dropdown al-user-profile">
-      <a class="profile-toggle-link dropdown-toggle" id="user-profile-dd" data-toggle="dropdown" aria-expanded="false">
-        <img src="{{ ( 'Nasta' | baProfilePicture ) }}">
-      </a>
-      <ul class="dropdown-menu top-dropdown-menu profile-dropdown" aria-labelledby="user-profile-dd">
-        <li class="dropdown-item"><i class="dropdown-arr"></i></li>
-        <li class="dropdown-item"><a href><i class="fa fa-user"></i>Perfil</a></li>
-        <li class="dropdown-item"><a href><i class="fa fa-cog"></i>Configuração</a></li>
-        <li class="dropdown-item"><a href class="signout"><i class="fa fa-power-off"></i>Sair</a></li>
-      </ul>
+  <div class="user-profile clearfix" align="right">
+    <a>
+     <img src="{{ ( 'inicio' | baProfilePicture ) }}" width="30px" height="30px"> Início
+    </a>
+
+    <a>
+      <img src="{{ ( 'dados-dos-municipios' | baProfilePicture ) }}" width="20px" height="20px"> Dados dos Municípios
+    </a>
+
+    <a>
+     <img src="{{ ( 'inspecoes' | baProfilePicture ) }}" width="30px" height="30px"> Inspeções
+    </a>
+
+    <a>
+      <img src="{{ ( 'ajuda' | baProfilePicture ) }}" width="30px" height="30px"> Ajuda
+    </a>
+
+    <a >
+      <img src="{{ ( 'sitio-mds' | baProfilePicture ) }}" width="20px" height="20px"> MDS
+    </a>
+
     </div>
   </div>
-</div>
+

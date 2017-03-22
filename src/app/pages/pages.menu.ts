@@ -30,7 +30,7 @@ export const PAGES_MENU = [
         path: 'tela2',
         data: {
           menu: {
-            title: 'Dados do Município',
+            title: 'Dados dos Municípios',
             icon: 'ion-connection-bars',
             selected: false,
             expanded: false,
