@@ -5,6 +5,7 @@
   <button type="button" class="btn btn-raised"><b>AJUDA</b></button>
 </div>
 
+
 &nbsp;
 <div class="widgets">
 
@@ -30,43 +31,12 @@
 
 
 
-    <div class="container">
-      <div class="col-md-6">
-        <h3><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="{{ ( 'Calendário'| baProfilePicture ) }}" width="45" height="45"> INÍCIO*</b></h3>
-        <div class="form-group">
-          <div class='input-group date' id='datetimepicker6'>
-            <input type='text' class="form-control" />
-            <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="form-group">
-          <div class='input-group date' id='datetimepicker7'>
-          </div>
-        </div>
-      </div>
-    </div>
+    <html lang="pt-br">
+    <form>
+      <b> <h4> <img src="{{ ( 'Calendário'| baProfilePicture ) }}" width="45" height="45">&nbsp;INÍCIO:&nbsp; <input type="date" name="mydate"> </h4> </b>
+    </form>
     &nbsp;
-
-    <script type="text/javascript">
-      $(function () {
-        $('#datetimepicker6').datetimepicker();
-        $('#datetimepicker7').datetimepicker({
-          useCurrent: false //Important! See issue #1075
-        });
-        $("#datetimepicker6").on("dp.change", function (e) {
-          $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-        });
-        $("#datetimepicker7").on("dp.change", function (e) {
-          $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-        });
-      });
-    </script>
-
+    </html>
 
     <div class="row">
       <ba-card class="col-xl-6 col xl-0"
@@ -143,266 +113,17 @@
       </table>
     </div>
 
-
-    <ba-card title="QUESTÕES" baCardClass="with-scroll heading-widget">
-
-      <div class="section-block">
-        <h2><b>  <span class="label label-danger"> EIXO EQUIPE TÉCNICA. </span></b></h2>
-        <h4> <b> A equipe técnica está em conformidade com a nobrh? </b> </h4>
-        <h4> <b> São promovidas atividades de capacitação para equipe? </b> </h4>
-      </div>
-
-
-      <div class="section-block">
-        <h2><b> <span class="label label-danger"> EIXO PROGRAMAS, PROJETOS, SERVIÇOS E BENEFÍCIOS. </span></b></h2>
-        <h4> <b> O paif funciona conforme a resolução cit 04/2011?</b></h4>
-        <h4> <b>Existe regulamentação dos benefícios eventuais? </b></h4>
-        <h4> <b>A frequência das visitas domiciliares é compatível com a necessidade dos usuários?</b></h4>
-      </div>
-
-      <div class="section-block">
-        <h2><b> <span class="label label-danger"> EIXO INFRAESTRUTURA.</span></b></h2>
-        <h4> <b> O equipamento possui acessibilidade conforme as normas estabelecidas pela abnt(nbr 9050)? </b></h4>
-      </div>
-
-
-      <ba-card class="col-xlg-6 col-xl-0"
-               title="QUESTÕES" baCardClass="small-card">
-        <h3> <b> <td> <img src="{{ ( 'questão'| baProfilePicture ) }}" width="45" height="45"> A equipe técnica está em conformidade com a nobrh?</b> </h3>
-      </ba-card>
-
-      <ba-card class="col-xlg-6 col-xl-0"
-               title="REGRA DE COLORAÇÃO" baCardClass="small-card">
-        <h4><b><img src="{{ ( 'paleta'| baProfilePicture ) }}" width="45" height="35"> Se o CRAS for de porte grande (5000 famílias) e a quantidade de técnicos de nível superior for menor
-          que 2 assistentes sociais, 1 psicólogo, e 1 profissional que compõe o SUAS ou a quantidade de técnicos
-          de nível médio for menor que 4: Vermelho. </b></h4>
-      </ba-card>
-
-
-      <ba-card class="col-xlg-6 col-xl-0"
-               title="LEGISLAÇÃO" baCardClass="small-card">
-        <h3><b><img src="{{ ( 'legislacao'| baProfilePicture ) }}" width="45" height="45"> Resolução nobrh/suas nº 01 de 25 de janeiro de 2007. </b> </h3>
-      </ba-card>
-
-
-
-      <div class="horizontal-scroll">
-        <table class="table table-hover">
-          <thead>
-          <tr class="black-muted-bg">
-            <td><h2><b>CRAS - BARRA DO PIRAÍ - CENTRO </b></h2></td>
-          </tr>
-          </thead>
-        </table>
-      </div>
-
-
-
-      <div class="bs-example">
-        <table class="table table-condensed">
-          <thead>
-          <tr>
-            <th></th>
-            <th><b>JANEIRO/2016</b></th>
-            <th><b>MARÇO/2016</b></th>
-            <th><b>MAIO/2016</b></th>
-
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-
-          </tr>
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-
-          </tr>
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-
-          </tr>
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-
-          </tr>
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-
-          </tr>
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-
-          </tr>
-          </tbody>
-        </table>
-      </div>
-
-
-      <div class="horizontal-scroll">
-        <table class="table table-hover">
-          <thead>
-          <tr class="black-muted-bg">
-            <td><h2><b>CRAS - BARRA DO PIRAÍ - CALIFÓRNIA DA BARRA </b></h2></td>
-          </tr>
-          </thead>
-        </table>
-      </div>
-
-
-      <div class="bs-example">
-        <table class="table table-condensed">
-          <thead>
-          <tr>
-            <th></th>
-            <th><b>JANEIRO/2016</b></th>
-            <th><b>MARÇO/2016</b></th>
-            <th><b>MAIO/2016</b></th>
-
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-
-
-      <div class="horizontal-scroll">
-        <table class="table table-hover">
-          <thead>
-          <tr class="black-muted-bg">
-            <td><h2><b>CRAS - BARRA DO PIRAÍ - VARGEM ALEGRE </b></h2></td>
-          </tr>
-          </thead>
-        </table>
-      </div>
-
-
-      <div class="bs-example">
-        <table class="table table-condensed">
-          <thead>
-          <tr>
-            <th></th>
-            <th><b>JANEIRO/2016</b></th>
-            <th><b>MARÇO/2016</b></th>
-            <th><b>MAIO/2016</b></th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
-          </tr>
-          </tbody>
-        </table>
-        <hr color="white">
-      </div>
-
-
+    &nbsp;
 
         <table class="tabela">
           <thead class="tabela-head">
           <tr>
             <td rowspan="2">
-              QUESTÕES
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUESTÕES
             </td>
             <td colspan="3"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRAS - BARRA DO PIRAI - CENTRO</b></td>
             <td colspan="3"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRAS - BARRA DO PIRAI - CALIFÓRNIA DA BARRA</b></td>
-            <td colspan="3"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRAS - BARRA DO PIRAI - VARGEM ALEGRIA</b></td>
+            <td colspan="3"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRAS - BARRA DO PIRAI - VARGEM</b></td>
           </tr>
 
           <tr>
@@ -417,16 +138,22 @@
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JANEIRO/2016</td>
             <td>MARÇO/2016</td>
             <td>MAIO/2016</td>
+
+
           </tr>
-
-
           </thead>
+
+
+
+
           <tbody>
           <tr>
-            <span class="label label-danger"><td><b>EIXO EQUIPE TECNICA</b></td> </span>
+            <span class="btn-primary"><td><b>EIXO EQUIPE TECNICA</b></td> </span>
           </tr>
+          &nbsp;
+
           <tr>
-            <td>QUIPE TECNICA ESTÁ EM CONFORMIDADE COM A NOBRH ?</td>
+            <td>EQUIPE TECNICA ESTÁ EM CONFORMIDADE COM A NOBRH ?</td>
 
             <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
             <td><b>SIM</b></td>
@@ -442,23 +169,101 @@
           </tr>
 
             <tr>
-            <td>QUIPE TECNICA ESTÁ EM CONFORMIDADE COM A NOBRH ?</td>
+            <td>SÃO PROMOVIDAS ATIVIDADES DE CAPACITAÇÃO PARA EQUIPE ?</td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>SIM</b></td>
+              <td><b>SIM</b></td>
 
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+          </tr>
+
+          <hr color="white">
 
           <tr>
-            <td></td>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <span class="btn-primary"><td><b>EIXO PROGRAMAS, PROJETOS, SERVIÇOS E BENEFÍCIOS.</b></td> </span>
+          </tr>
+          &nbsp;
+
+           <tr>
+            <td>O PAIF FUNCIONA CONFORME A RESOLUÇÃO CIT 04/2011?</td>
+
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
             <td><b>SIM</b></td>
             <td><b>SIM</b></td>
 
 
             <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
             <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>SIM</b></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>NÃO</b></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>SIM</b></td>
+          </tr>
+
+          <tr>
+            <td>EXISTE REGULAMENTAÇÃO DOS BENEFÍCIOS EVENTUAIS?</td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>SIM</b></td>
+            <td><b>SIM</b></td>
+
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
             <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
 
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>NÃO</b></td>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>NÃO</b></td>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+
+
+          <tr>
+            <td>A FREQ DAS VISITAS DOMICILIARES É COMPATÍVEL COM A NECESSIDADE DOS USUÁRIOS?</td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>SIM</b></td>
+            <td><b>SIM</b></td>
+
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+          </tr>
+
+          <hr color="white">
+
+          <tr>
+            <span class="btn-primary"><td><b>EIXO INFRAESTRUTURA</b></td> </span>
+          </tr>
+
+          &nbsp;
+
+          <tr>
+            <td>O EQUIPAMENTO POSSUI ACESSIBILIDADE CONFORME AS NORMAS ESTABELECIDAS PELA ABNT (NBR 9050)?</td>
+
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>NÃO</b></td>
+            <td><b>NÃO</b></td>
+
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+          </tr>
+
+          <tr>
+            <hr color="white">
+
           </tr>
           </tbody>
         </table>
