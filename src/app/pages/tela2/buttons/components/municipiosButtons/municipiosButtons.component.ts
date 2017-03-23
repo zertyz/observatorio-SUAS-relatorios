@@ -5,6 +5,7 @@ import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'municipios-buttons',
+  styleUrls:['./municipiosButtons.scss'],
   templateUrl: './municipiosButtons.html'
 })
 

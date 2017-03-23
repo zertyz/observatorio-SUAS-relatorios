@@ -5,6 +5,7 @@ import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'ano-buttons',
+  styleUrls:['./anoButtons.scss'],
   templateUrl: './anoButtons.html'
 })
 
