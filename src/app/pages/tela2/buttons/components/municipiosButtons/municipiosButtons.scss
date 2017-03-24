@@ -1,7 +1,8 @@
 #barra-de-rolagem {
   width:300px;
-  height:200px;
+  height:100px;
   background-color: white;
+  opacity:0.7;
   overflow: auto;
   float:right;
 }
@@ -18,8 +19,7 @@ ul li {
 ul li a{
   padding: 5px;
   text-decoration: none;
-  color:black;
-
+  color:slategray;
 }
 ul li a:hover {
   text-decoration: underline;
