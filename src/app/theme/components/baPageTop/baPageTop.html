@@ -1,12 +1,23 @@
 <div class="page-top clearfix" baScrollPosition maxHeight="50" (scrollChange)="scrolledChanged($event)"
      [ngClass]="{scrolled: isScrolled}">
-  <a routerLink="/pages/dashboard" class="al-logo clearfix"><span></span></a>
+
+    <a href="#">
+      <img src="{{ ( 'observatorio' | baProfilePicture ) }}" width="150px" height="65px">
+    </a>
+
+    <a href="#">
+      <img src="{{ ( 'mprj' | baProfilePicture ) }}" width="150px" height="65px">
+    </a>
+
+  <a routerLink="/pages/dashboard"><span></span></a>
   <a href (click)="toggleMenu()" class="collapse-menu-link ion-navicon"></a>
 
   <div class="search">
     <i class="ion-ios-search-strong" ng-click="startSearch()"></i>
     <input id="searchInput" type="text" placeholder="Procurar por...">
   </div>
+
+
 
   <div class="user-profile clearfix" align="right">
     <a href="#">
