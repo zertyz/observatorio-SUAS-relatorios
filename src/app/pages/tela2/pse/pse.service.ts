@@ -11,7 +11,7 @@ export class PseService {
     let pieColor = this._baConfig.get().colors.custom.dashboardPieChart;
     return [
       {
-        color: pieColor,
+        color:pieColor,
         description: 'UTILIZADO',
         stats: 'Verde',
 

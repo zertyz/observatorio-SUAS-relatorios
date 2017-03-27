@@ -1,45 +1,42 @@
-<div class="page-top clearfix" baScrollPosition maxHeight="50" (scrollChange)="scrolledChanged($event)"
-     [ngClass]="{scrolled: isScrolled}">
+<div class="page-top clearfix" >
+
+   <!-- <a routerLink="/pages/dashboard"><span></span></a>
+    <a href (click)="toggleMenu()" class="collapse-menu-link ion-navicon"> </a> -->
 
     <a href="#">
-      <img src="{{ ( 'observatorio' | baProfilePicture ) }}" width="150px" height="65px">
+      <img src="{{ ( 'observatorio' | baProfilePicture ) }}" width="150px" height="50px">
     </a>
 
     <a href="#">
       <img src="{{ ( 'mprj' | baProfilePicture ) }}" width="150px" height="65px">
     </a>
 
-  <a routerLink="/pages/dashboard"><span></span></a>
-  <a href (click)="toggleMenu()" class="collapse-menu-link ion-navicon"></a>
-
   <div class="search">
     <i class="ion-ios-search-strong" ng-click="startSearch()"></i>
     <input id="searchInput" type="text" placeholder="Procurar por...">
   </div>
 
-
-
   <div class="user-profile clearfix" align="right">
-    <a href="#">
-     <img src="{{ ( 'inicio' | baProfilePicture ) }}" width="30px" height="30px"> Início
+    <a href="http://localhost:3000/#/pages/tela1">
+     <img src="{{ ( 'inicio' | baProfilePicture ) }}" width="35px" height="35px"> Início
     </a>
 
-    <a href="#">
-      <img src="{{ ( 'dados-dos-municipios' | baProfilePicture ) }}" width="20px" height="20px"> Dados dos Municípios
+    <a href="http://localhost:3000/#/pages/tela2">
+      <img  src="{{ ( 'dados-dos-municipios' | baProfilePicture ) }}" width="20px" height="20px"> Dados dos Municípios
     </a>
 
-    <a href="#">
-     <img src="{{ ( 'inspecoes' | baProfilePicture ) }}" width="30px" height="30px"> Inspeções
+    <a href="http://localhost:3000/#/pages/dashboard">
+     <img   src="{{ ( 'inspecoes' | baProfilePicture ) }}" width="35px" height="35px"> Inspeções
     </a>
 
-    <a href="#">
-      <img src="{{ ( 'ajuda' | baProfilePicture ) }}" width="30px" height="30px"> Ajuda
+    <a href="http://localhost:3000/#/pages/dashboard">
+      <img src="{{ ( 'ajuda' | baProfilePicture ) }}" width="35px" height="35px"> Ajuda
     </a>
 
-    <a href="#" >
-      <img src="{{ ( 'sitio-mds' | baProfilePicture ) }}" width="20px" height="20px"> MDS
+    <a href="https://www.mds.gov.br/">
+      <img src="{{ ( 'sitio-mds' | baProfilePicture ) }}" width="25px" height="25px"> MDS
     </a>
-
     </div>
+
   </div>
 

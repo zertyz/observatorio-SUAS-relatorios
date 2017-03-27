@@ -126,8 +126,8 @@ a.collapse-menu-link {
   white-space: nowrap;
   overflow: hidden;
   width: 162px;
-  float: left;
-  margin: 20px 0 0 30px;
+  float: right;
+  margin: 13px 0 0 30px;
 
   label {
     cursor: pointer;
@@ -172,7 +172,7 @@ a.collapse-menu-link {
     margin-right: 10px;
   }
   a.collapse-menu-link {
-    margin-left: 10px;
+    margin-left:0;
   }
 
   .al-skin-dropdown {
@@ -188,4 +188,8 @@ a:visited{
   color: white;
 }
 
+
+.margem{
+  margin: 10px 0 0 0;
+  }
 

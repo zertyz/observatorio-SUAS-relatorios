@@ -7,7 +7,7 @@ import { PAGES_MENU } from './pages.menu';
 @Component({
   selector: 'pages',
   template: `
-    <ba-sidebar></ba-sidebar>
+   <ba-sidebar></ba-sidebar> 
     <ba-page-top></ba-page-top>
     <div class="al-main">
       <div class="al-content">
@@ -22,10 +22,10 @@ import { PAGES_MENU } from './pages.menu';
       <div class="al-footer-main clearfix">
         <div class="al-copy"> <a href="http://www.mprj.mp.br/"> MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO</a> </div>
         <ul class="al-share clearfix">
-          <li><a href="" target="_blank"><i class="socicon socicon-facebook"></i></a></li>
-          <li><a href="" target="_blank"><i class="socicon socicon-twitter"></i></a></li>
-          <li><a href="" target="_blank"><i class="socicon socicon-google"></i></a></li>
-          <li><a href="" target="_blank"><i class="socicon socicon-github"></i></a></li>
+          <li><a href="https://pt-br.facebook.com/MPRJ.Oficial" target="_blank"> <i class="socicon socicon-facebook"></i></a></li>
+          <li><a href="https://twitter.com/mp_rj" target="_blank"> <i class="socicon socicon-twitter"></i></a></li>
+          <li><a href="https://plus.google.com/106370263355225435139" target="_blank"> <i class="socicon socicon-google"></i></a></li>
+          <li><a href="http://www.mprj.mp.br/comunicacao/ouvidoria" target="_blank"> <i class="fa fa fa-bullhorn"> </i></a></li>
         </ul>
       </div>
     </footer>

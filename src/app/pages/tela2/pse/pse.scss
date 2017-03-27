@@ -63,12 +63,15 @@
     top: 0;
     left: 0;
   }
+
   .percent {
     display: inline-block;
     line-height: 84px;
     z-index: 2;
     font-size: 16px;
+    color: lightgray;
   }
+
   .percent:after {
     content: '%';
     margin-left: 0.1em;
@@ -90,4 +93,7 @@
   .angular .chart {
     margin-top: 0;
   }
+
+
+
 }
