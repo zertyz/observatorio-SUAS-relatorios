@@ -51,6 +51,18 @@ export const PAGES_MENU = [
         }
       },
       {
+        path: 'tela4',
+        data: {
+          menu: {
+            title: 'Ajuda',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
         path: 'editors',
         data: {
           menu: {
