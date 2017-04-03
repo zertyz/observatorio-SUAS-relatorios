@@ -41,6 +41,8 @@ import { IndicadoresSociais } from'./indicadoresSociais/indicadoresSociais.compo
 
 import { DadosMunicipais } from './dadosMunicipais/dadosMunicipais.component';
 
+import { MapaEstadual } from './mapa-estadual/mapa-estadual.component';
+
 
 @NgModule({
   imports: [
@@ -73,6 +75,7 @@ import { DadosMunicipais } from './dadosMunicipais/dadosMunicipais.component';
     IndicadoresSociais,
     AnoButtons,
     DadosMunicipais,
+    MapaEstadual,
 
   ],
   providers: [
