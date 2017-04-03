@@ -62,6 +62,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
   }
 
   .percent {
@@ -96,4 +97,23 @@
 
 
 
+}
+
+p{
+  font-size: 13px;
+}
+.utilizado{
+  color: #00cd00;
+}
+
+.nao-utilizado{
+  color: #bd0000;
+}
+
+.centro{
+  margin-left: 60px;
+}
+
+table{
+  text-align: center;
 }

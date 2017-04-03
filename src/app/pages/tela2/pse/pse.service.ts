@@ -11,15 +11,10 @@ export class PseService {
     let pieColor = this._baConfig.get().colors.custom.dashboardPieChart;
     return [
       {
-        color:pieColor,
-        description: 'UTILIZADO',
-        stats: 'Verde',
-
+        color:  colorHelper.hexToRgbA('#3acd52', 0.8),
       }, {
-        color: pieColor,
-        description: 'NÃO UTILIZADO',
-        stats: 'Vermelho',
 
+        color:  colorHelper.hexToRgbA('#cd2d26', 0.8),
       }
     ];
   }

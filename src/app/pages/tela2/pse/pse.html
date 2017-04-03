@@ -1,11 +1,21 @@
-<div class="col-xl-3 col-lg-3 col-md-3">
+<div>
+  <table>
+    <tr>
+      <td> TOTAL DE RECURSOS </td>
+      <td class="utilizado">  UTILIZADO </td>
+      <td class="nao-utilizado">  NÃO UTILIZADO </td>
+    </tr>
 
-  TOTAL DE RECURSOS <p> 146.835,10 </p> <hr>
-  UTILIZADO <p> 38.334,04 </p> <hr>
-  NÃO UTILIZADO (OMISSÃO OU BLOQUEIO) <p> 108.501,06 </p>
+    <tr>
+      <td> 146.835,10 </td>
+      <td class="utilizado">  38.334,04 </td>
+      <td class="nao-utilizado">  108.501,06 </td>
+    </tr>
+
+  </table>
 </div>
 
-<div class="col">
+<div class="centro">
   <div class="row pie-charts">
     <div *ngFor="let chart of charts" class="pie-chart-item-container col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
 
@@ -21,9 +31,6 @@
         </div>
         <i class="chart-icon i-{{ chart.icon }}"></i>
       </div>
-
     </div>
   </div>
 </div>
-
-

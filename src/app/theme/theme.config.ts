@@ -53,7 +53,7 @@ export class BaThemeConfig {
      },
 
      custom: {
-      dashboardPieChart: colorHelper.hexToRgbA('#aaaaaa', 0.8),
+       dashboardPieChart: colorHelper.hexToRgbA('#aaaaaa', 0.8),
        dashboardLineChart: '#6eba8c',
       },
     });
