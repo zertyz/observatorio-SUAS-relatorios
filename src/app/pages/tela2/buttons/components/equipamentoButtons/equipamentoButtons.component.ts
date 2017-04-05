@@ -2,6 +2,7 @@ import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'e-buttons',
+  styleUrls:['./equipamentoButtons.scss'],
   templateUrl: './equipamentoButtons.html'
 })
 
