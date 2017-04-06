@@ -2,25 +2,24 @@
   float:right;
 }
 
-
 .alinhacentro{
   text-align:right;
   width: 69%;
   font-size: 10px;
-  color: white;
+  color: black;
 }
 
 
 .fonte{
   font-size: 15px;
   font-weight: bold;
-  color: white;
+  color: black;
   float: left;
 }
 
 .fonte2{
   font-size: 10px;
-  color:white;
+  color:black;
   text-align: right;
 }
 
@@ -35,23 +34,49 @@ font-weight: bold;
   text-align:right;
 }
 
+.dados2{
+  font-family: "Arial Black", arial-black;
+  font-size: 20px;
+  color:midnightblue;
+  text-align:right;
+  float:right;
+}
+
 
 .percentual{
   font-family: "Arial Black", arial-black;
   font-size: 15px;
   color: orange;
-  text-align: right;
+  float: right;
 }
 
 
 
 hr{
-width: 200%;
+width: 150%;
   color: white;
 
 }
 
 .linha-horizontal{
-  width:100%;
+  width:370%;
+  color: white;
 }
 
+table{
+  background-color: #c1ccc8;
+  opacity: 0.9;
+}
+
+
+.cabeçalho{
+  font-size: 15px;
+  color: #00003d;
+  font-weight: bold;
+  background-color:steelblue;
+
+}
+
+.texto{
+  color:black;
+}

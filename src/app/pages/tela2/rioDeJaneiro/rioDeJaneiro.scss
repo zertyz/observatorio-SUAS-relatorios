@@ -12,12 +12,20 @@
 .alinhadir{
   text-align:right;
   width:20%;
+  float: right;
 
 }
 
 .alinhaesq{
   text-align: left;
   width: 20%;
+}
+
+.estado{
+  text-align: left;
+  width: 20%;
+  color: #00003d;
+  background-color:steelblue;
 
 }
 .alinhacentro{
@@ -26,13 +34,21 @@
 }
 
 table{
-  font-size: 10px;
+  font-size: 13px;
+  color: black;
+  background-color: #c1ccc8;
+  opacity: 0.9;
+
+  hr{
+    color: gray;
+    opacity: 0.1;
+    width: 200%;
+  }
 
 }
 .fonte{
   font-family: "Arial Black", arial-black;
-  font-size: 15px;
-  color: white;
+  font-size: 20px;
 }
 .dados{
   font-family: "Arial Black", arial-black;
