@@ -39,6 +39,30 @@ export const PAGES_MENU = [
         }
       },
       {
+        path: 'tela3',
+        data: {
+          menu: {
+            title: 'Inspeções',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
+        path: 'tela4',
+        data: {
+          menu: {
+            title: 'Ajuda',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
         path: 'editors',
         data: {
           menu: {
