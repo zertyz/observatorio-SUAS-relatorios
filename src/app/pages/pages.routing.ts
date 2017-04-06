@@ -20,6 +20,10 @@ export const routes: Routes = [
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', loadChildren: 'app/pages/dashboard/dashboard.module#DashboardModule' },
+      { path: 'tela1', loadChildren: './tela1/tela1.module' },
+      { path: 'tela2', loadChildren: './tela2/tela2.module' },
+      { path: 'tela3', loadChildren: './tela3/tela3.module' },
+      { path: 'tela4', loadChildren: './tela4/tela4.module' },
       { path: 'editors', loadChildren: 'app/pages/editors/editors.module#EditorsModule' },
       { path: 'components', loadChildren: 'app/pages/components/components.module#ComponentsModule' },
       { path: 'charts', loadChildren: 'app/pages/charts/charts.module#ChartsModule' },
@@ -32,3 +36,4 @@ export const routes: Routes = [
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forChild(routes);
+

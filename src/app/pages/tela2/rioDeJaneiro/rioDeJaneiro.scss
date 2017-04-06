@@ -1,0 +1,63 @@
+.box {
+  width: 10px;
+  float: right;
+  height: 60px; /*Altura da linha */
+}
+
+.linha-vertical {
+  border-left: 2px solid; /*  Adiciona borda esquerda na div como ser fosse uma linha.*/
+  box-sizing: border-box;
+}
+
+.alinhadir{
+  text-align:right;
+  width:20%;
+  float: right;
+
+}
+
+.alinhaesq{
+  text-align: left;
+  width: 20%;
+}
+
+.estado{
+  text-align: left;
+  width: 20%;
+  color: #00003d;
+  background-color:steelblue;
+
+}
+.alinhacentro{
+  font-size: 110%;
+  text-align: center;
+}
+
+table{
+  font-size: 13px;
+  color: black;
+  background-color: #c1ccc8;
+  opacity: 0.9;
+
+  hr{
+    color: gray;
+    opacity: 0.1;
+    width: 200%;
+  }
+
+}
+.fonte{
+  font-family: "Arial Black", arial-black;
+  font-size: 20px;
+}
+.dados{
+  font-family: "Arial Black", arial-black;
+  font-size: 15px;
+  color:midnightblue;
+}
+
+hr{
+  border: 1px solid;
+  margin-top: auto;
+
+}

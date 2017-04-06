@@ -1,52 +1,526 @@
-<div class="row">
-  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <pie-chart></pie-chart>
+<hr color="white">
+
+<div class="button-wrapper">
+    <button type="button" class="btn btn-raised"><b>INÍCIO</b></button>
+    <button type="button" class="btn btn-raised"><b>AJUDA</b></button>
   </div>
-</div>
 
-<div class="row">
-  <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-xs-12"
-                     title="Acquisition Channels" baCardClass="traffic-panel medium-card">
-    <traffic-chart></traffic-chart>
-  </ba-card>
+  &nbsp;
+  <div class="widgets">
 
-  <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-xs-12"
-           title="Users by Country" baCardClass="medium-card">
-    <users-map></users-map>
-  </ba-card>
-</div>
+  <div class="row">
+  </div>
 
-<div class="row">
-  <div class="col-xlg-9 col-xl-6 col-lg-6  col-md-12 col-sm-12 col-xs-12">
-    <div class="row">
-      <ba-card class="col-xlg-8 col-xl-12 col-lg-12 col-md-7 col-sm-12 col-xs-12"
-               title="Revenue" baCardClass="medium-card">
-        <line-chart></line-chart>
-      </ba-card>
-      <ba-card class="col-xlg-4 col-xl-12 col-lg-12 col-md-5 col-sm-12 col-xs-12"
-               baCardClass="popular-app medium-card">
-        <popular-app></popular-app>
+
+  <div class="row">
+    <ba-card class="col-xlg-6 col-xl-0"
+          title=" NOVA INSPEÇÃO " baCardClass="small-card">
+      <b><h4> <td> <img src="{{ ( 'inspeção'| baProfilePicture ) }}" width="60" height="55">&nbsp;INICIAR UMA NOVA INSPEÇÃO EM UM ESTABELECIMENTO.</h4></b>
+    </ba-card>
+
+
+      <ba-card class="col-xlg-6 col-xl-0"
+               title="VISUALIZAÇÃO DE INSPEÇÕES - FILTROS PARA SELEÇÃO" baCardClass="small-card">
+        <b> <h4> <img src="{{ ( 'filtro'| baProfilePicture ) }}" width="45" height="45">&nbsp;&nbsp;OS CAMPOS COM (*) SÃO CONSIDERADOS OBRIGATÓRIOS.</h4></b>
       </ba-card>
     </div>
-  </div>
 
-  <div class="col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-    <ba-card title="Feed"
-             baCardClass="large-card with-scroll feed-panel">
-      <feed></feed>
-    </ba-card>
-  </div>
+    <div class="row">
+    <div></div>
 
-</div>
 
-<div class="row shift-up">
-  <ba-card class="col-xlg-3 col-lg-6 col-md-12 col-sm-12 col-xs-12" title="To Do List"
-           baCardClass="xmedium-card feed-comply-panel with-scroll todo-panel">
-    <todo></todo>
-  </ba-card>
-  <ba-card class="col-xlg-6 col-lg-6 col-md-12 col-sm-12 col-xs-12" title="Calendar"
-           baCardClass="xmedium-card feed-comply-panel with-scroll calendar-panel">
-    <calendar></calendar>
-  </ba-card>
-</div>
+
+      <div class="container">
+        <div class="col-md-6">
+          <h3><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="{{ ( 'Calendário'| baProfilePicture ) }}" width="45" height="45"> INÍCIO*</b></h3>
+          <div class="form-group">
+            <div class='input-group date' id='datetimepicker6'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <div class='input-group date' id='datetimepicker7'>
+            </div>
+          </div>
+        </div>
+      </div>
+      &nbsp;
+
+      <script type="text/javascript">
+        $(function () {
+          $('#datetimepicker6').datetimepicker();
+          $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+          });
+          $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+          });
+          $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+          });
+        });
+      </script>
+
+
+      <div class="row">
+      <ba-card class="col-xl-6 col xl-0"
+      title="TIPO DE INSPEÇÃO*" baCardClass="small-card">
+        <div class="bs-example">
+          <div class="btn-group-justified">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="btn btn-primary"><b>CRAS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#" class="btn btn-primary"><b>CREAS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#" class="btn btn-primary"><b>CENTRO POP</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          </div>
+        </div>
+      </ba-card>
+
+
+      <ba-card class="col-xl-6 col xl-0"
+               title="EIXOS*" baCardClass="small-card">
+        <div class="button-wrapper">
+          <button type="button" class="btn btn-default btn-raised">EQUIPE TÉCNICA</button>
+          <button type="button" class="btn btn-default btn-raised">INFRAESTRUTURA</button>
+          <button type="button" class="btn btn-default btn-raised">PROGRAMAS,PROJETOS,SERVIÇOS E BENEFÍCIOS</button>
+          </div>
+      </ba-card>
+      </div>
+
+      <div class="row">
+        <div></div>
+
+      <ba-card class="col-xl-6 col-xl-0"
+        title="MUNICÍPIO*" baCardClass="small-card">
+        <div class="button-wrapper">
+          <button type="button" class="btn btn-default btn-raised">ANGRA DOS REIS</button>
+          <button type="button" class="btn btn-default btn-raised">BARRA DO PIRAÍ</button>
+          <button type="button" class="btn btn-default btn-raised">NITERÓI</button>
+          <button type="button" class="btn btn-default btn-raised">SÃO GONÇALO</button>
+          <button type="button" class="btn btn-default btn-raised">RIO DE JANEIRO</button>
+        </div>
+      </ba-card>
+
+
+        <ba-card class="col-xl-6 col-xl-0"
+                 title="EQUIPAMENTO*" baCardClass="small-card with-scroll feed-panel">
+          <div class="button-wrapper">
+            <button type="button" class="btn btn-default btn-raised">CRAS BARRA DO PIRAÍ CENTRO</button>
+            <button type="button" class="btn btn-default btn-raised">CRAS BARRA DO PIRAÍ AREAL</button>
+            <button type="button" class="btn btn-default btn-raised">CRAS BARRA DO PIRAÍ AREAL</button>
+          </div>
+        </ba-card>
+    </div>
+
+
+      <div class="button-wrapper">
+        <button type="button" class="btn btn-raised"><b>LIMPAR FILTRO</b></button>
+        <button type="button" class="btn btn-raised"><b>BUSCAR</b></button>
+      </div>
+
+      &nbsp;
+      <div class="horizontal-scroll">
+    <table class="table table-hover">
+      <thead>
+      <tr class="black-muted-bg">
+        <td> <img src="{{ ( 'resultados'| baProfilePicture ) }}" width="45" height="35">
+        <td class="-"></td>
+        <td class="-"></td>
+        <td class="-"></td>
+        <td class="-"></td>
+        <td class="-"></td>
+        <td class="-"></td>
+        <td class="-"></td>
+
+
+        <td> <b> <h2> RESULTADOS DA CONSULTA </h2> </b>  </td>
+      </tr>
+      </thead>
+    </table>
+      </div>
+
+
+      <ba-card title="QUESTÕES" baCardClass="with-scroll heading-widget">
+
+        <div class="section-block">
+          <h2><b>  <span class="label label-danger"> EIXO EQUIPE TÉCNICA. </span></b></h2>
+          <h4> <b> A equipe técnica está em conformidade com a nobrh? </b> </h4>
+          <h4> <b> São promovidas atividades de capacitação para equipe? </b> </h4>
+        </div>
+
+
+        <div class="section-block">
+          <h2><b> <span class="label label-danger"> EIXO PROGRAMAS, PROJETOS, SERVIÇOS E BENEFÍCIOS. </span></b></h2>
+          <h4> <b> O paif funciona conforme a resolução cit 04/2011?</b></h4>
+          <h4> <b>Existe regulamentação dos benefícios eventuais? </b></h4>
+          <h4> <b>A frequência das visitas domiciliares é compatível com a necessidade dos usuários?</b></h4>
+        </div>
+
+        <div class="section-block">
+          <h2><b> <span class="label label-danger"> EIXO INFRAESTRUTURA.</span></b></h2>
+          <h4> <b> O equipamento possui acessibilidade conforme as normas estabelecidas pela abnt(nbr 9050)? </b></h4>
+        </div>
+
+
+        <ba-card class="col-xlg-6 col-xl-0"
+                 title="QUESTÕES" baCardClass="small-card">
+          <h3> <b> <td> <img src="{{ ( 'questão'| baProfilePicture ) }}" width="45" height="45"> A equipe técnica está em conformidade com a nobrh?</b> </h3>
+        </ba-card>
+
+        <ba-card class="col-xlg-6 col-xl-0"
+                 title="REGRA DE COLORAÇÃO" baCardClass="small-card">
+          <h4><b><img src="{{ ( 'paleta'| baProfilePicture ) }}" width="45" height="35"> Se o CRAS for de porte grande (5000 famílias) e a quantidade de técnicos de nível superior for menor
+          que 2 assistentes sociais, 1 psicólogo, e 1 profissional que compõe o SUAS ou a quantidade de técnicos
+            de nível médio for menor que 4: Vermelho. </b></h4>
+        </ba-card>
+
+
+        <ba-card class="col-xlg-6 col-xl-0"
+                 title="LEGISLAÇÃO" baCardClass="small-card">
+                    <h3><b><img src="{{ ( 'legislacao'| baProfilePicture ) }}" width="45" height="45"> Resolução nobrh/suas nº 01 de 25 de janeiro de 2007. </b> </h3>
+        </ba-card>
+
+
+
+        <div class="horizontal-scroll">
+          <table class="table table-hover">
+            <thead>
+            <tr class="black-muted-bg">
+              <td><h2><b>CRAS - BARRA DO PIRAÍ - CENTRO </b></h2></td>
+            </tr>
+            </thead>
+          </table>
+        </div>
+
+
+
+        <div class="bs-example">
+          <table class="table table-condensed">
+            <thead>
+            <tr>
+              <th></th>
+              <th><b>JANEIRO/2016</b></th>
+              <th><b>MARÇO/2016</b></th>
+              <th><b>MAIO/2016</b></th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+
+            </tr>
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+
+            </tr>
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+
+            </tr>
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+
+            </tr>
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+
+            </tr>
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="horizontal-scroll">
+          <table class="table table-hover">
+            <thead>
+            <tr class="black-muted-bg">
+              <td><h2><b>CRAS - BARRA DO PIRAÍ - CALIFÓRNIA DA BARRA </b></h2></td>
+            </tr>
+            </thead>
+          </table>
+        </div>
+
+
+        <div class="bs-example">
+          <table class="table table-condensed">
+            <thead>
+            <tr>
+              <th></th>
+              <th><b>JANEIRO/2016</b></th>
+              <th><b>MARÇO/2016</b></th>
+              <th><b>MAIO/2016</b></th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="horizontal-scroll">
+          <table class="table table-hover">
+            <thead>
+            <tr class="black-muted-bg">
+              <td><h2><b>CRAS - BARRA DO PIRAÍ - VARGEM ALEGRE </b></h2></td>
+            </tr>
+            </thead>
+          </table>
+        </div>
+
+
+        <div class="bs-example">
+          <table class="table table-condensed">
+            <thead>
+            <tr>
+              <th></th>
+              <th><b>JANEIRO/2016</b></th>
+              <th><b>MARÇO/2016</b></th>
+              <th><b>MAIO/2016</b></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+              <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NÃO</b></td>
+            </tr>
+            </tbody>
+          </table>
+          <hr color="white">
+        </div>
+
+
+        <div class="row">
+          <div></div>
+
+
+          &nbsp;
+
+          <div>
+          <ba-card class="col-xl-6 col-xl-15"
+                   title="FALE CONOSCO" baCardClass="feed-panel">
+            <img src="{{ ( 'porte'| baProfilePicture ) }}" width="870" height="115">
+            &nbsp;
+
+
+            <h4> <b> <img src="{{ ( 'fale conosco'| baProfilePicture ) }}" width="45" height="45"> &nbsp;Avenida Marechal Câmara, 370 - 6º Andar - Centro - Rio de Janeiro - RJ - 20.020-080 </b> </h4>
+            <h4> <b> <img src="{{ ( 'email'| baProfilePicture ) }}" width="20" height="20"> &nbsp;&nbsp;cao.cidadania@mprj.mp.br <img src="{{ ( 'telefone'| baProfilePicture ) }}" width="20" height="20"> 2531-9728 | 2220-2462 | 2215-1407 - FAX 2240-4653 </b> </h4>
+
+
+
+            <hr color="white">
+
+
+            <label class="col-sm-1 form-control-label" for="inputEmail3"><b>NOME</b></label>
+              <div class="col-sm-10">
+              </div>
+            &nbsp;
+            <input class="form-control" id="inputFirstName" placeholder="Seu primeiro nome..." type="text">
+            &nbsp;
+
+            <div class="row">
+            </div>
+
+            <label class="col-sm-2 form-control-label" for="inputEmail3"><b>E-MAIL</b></label>
+            <div class="col-sm-10">
+            </div>
+            &nbsp;
+            <input class="form-control" id="inputFirstName" placeholder="Fulano.tal@mprj.mp.br" type="text">
+            &nbsp;
+
+            <div class="row">
+            </div>
+
+            <label class="col-sm-2 form-control-label" for="inputEmail3"><b>MENSAGEM</b></label>
+            <div class="col-sm-10">
+            </div>
+            &nbsp;
+
+            <div class="form-group">
+              &nbsp;&nbsp; <textarea class="form-control" placeholder="Escreve aqui sua mensagem..."></textarea>
+            </div>
+            &nbsp;
+            &nbsp;&nbsp; <button type="submit" class="btn btn-success">&nbsp;&nbsp;&nbsp;ENVIAR&nbsp;&nbsp;&nbsp;</button>
+            <div>
+              &nbsp;
+
+              &nbsp;
+              <ba-card class="col-xl-12 col xl-0"
+              title="MANUAIS E CARTILHAS" baCardClass=""> &nbsp;&nbsp;&nbsp;<img src="{{ ( 'manuais'| baProfilePicture ) }}" width="45" height="45">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ ( 'cartilha'| baProfilePicture ) }}" width="125" height="135">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ ( 'cartilha'| baProfilePicture ) }}" width="125" height="135">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ ( 'cartilha'| baProfilePicture ) }}" width="125" height="135">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ ( 'cartilha'| baProfilePicture ) }}" width="125" height="135">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ ( 'população'| baProfilePicture ) }}" width="125" height="135">
+              </ba-card>
+            </div>
+          </ba-card>
+          </div>
+
+
+
+          <div>
+          <ba-card class="col-xl-6 col xl-0"
+          title="PERGUNTAS FREQUENTES" baCardClass="">
+
+              <div class="panel panel-default">
+                <img src="{{ ( 'faq'| baProfilePicture ) }}" width="45" height="45">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4><b>1. O QUE É CADASTRO ÚNICO?</b></h4></a>
+              <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <h3><b><i>&nbsp; O Cadastro Único para Programas Sociais do Governo Federal é um instrumento que identifica e caracteriza as famílias
+                  com renda mensal de até meio salário mínimo por pessoa ou de três salários mínimos no total.
+                  Dessa forma, o Cadastro Único possibilita conhecer a realidade socioeconômica dessas famílias, trazendo informações
+                  de todo o núcleo familiar, das características do domicílio, das formas de acesso a serviços públicos essenciais e também
+                  dados de cada um dos componentes da família.
+                  O Cadastro Único, regulamentado pelo Decreto nº 6.135/07 e coordenado pelo Ministério do Desenvolvimento Social e Combate
+                  à Fome (MDS), deve ser obrigatoriamente utilizado para seleção de benefíciários e integração de programas sociais do Governo Federal,
+                  como o Bolsa Família. Suas informações podem também ser utilizadas pelos governos estaduais e municipais para obter o diagnóstico
+                  socioeconômico das famílias cadastradas, possibilitando a análise das suas principais necessidades. Famílias com renda superior a meio
+                  salário mínimo também podem ser inscritas, desde que sua inserção esteja vinculada à inclusão e/ou permanência em programas sociais
+                  implementados pelo poder público nas três esferas do Governo. </i></b></h3>
+                </div>
+              </div>
+
+
+                <hr color="white">
+
+                <div class="panel panel-default">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwO">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4><b>2. QUAIS OS DIAS E HORÁRIOS DE FUNCIONAMENTO DO CRAS?</b></h4></a>
+                  <div id="collapseTwO" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h3><b><i> Dia: Segunda à Sexta. - Horário: 08:00h às 18:00h.</i></b></h3>
+                    </div>
+                  </div>
+
+
+                  <hr color="white">
+
+                  <div class="panel panel-default">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4><b>3. QUAIS SÃO AS FAIXAS ETÁRIAS DO SERVIÇO DE CONVIVÊNCIA E FORTALECIMENTO DE VÍNCULOS?</b></h4></a>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <h3><b><i>AAAAAA BBBBBB CCCCCC DDDDDD</i></b></h3>
+                      </div>
+                    </div>
+
+                    <hr color="white">
+
+                    <div class="panel panel-default">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4><b>4. O QUE SÃO BENEFÍCIOS INDIVIDUAIS?</b></h4></a>
+                      <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <h3><b><i>AAAAAA BBBBBB CCCCCC DDDDDD</i></b></h3>
+                        </div>
+                      </div>
+
+
+                      <hr color="white">
+
+
+
+
 

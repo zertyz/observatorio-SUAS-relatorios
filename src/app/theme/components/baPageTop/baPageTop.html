@@ -1,25 +1,42 @@
-<div class="page-top clearfix" baScrollPosition maxHeight="50" (scrollChange)="scrolledChanged($event)"
-     [ngClass]="{scrolled: isScrolled}">
-  <a routerLink="/pages/dashboard" class="al-logo clearfix"><span>ng2-</span>admin</a>
-  <a href (click)="toggleMenu()" class="collapse-menu-link ion-navicon"></a>
+<div class="page-top clearfix" >
+
+   <a routerLink="/pages/dashboard"><span></span></a>
+    <a href (click)="toggleMenu()" class="collapse-menu-link ion-navicon"> </a>
+
+    <a href="#">
+      <img src="{{ ( 'observatorio' | baProfilePicture ) }}" width="150px" height="50px">
+    </a>
+
+    <a href="#">
+      <img src="{{ ( 'mprj' | baProfilePicture ) }}" width="150px" height="65px">
+    </a>
 
   <div class="search">
     <i class="ion-ios-search-strong" ng-click="startSearch()"></i>
-    <input id="searchInput" type="text" placeholder="Search for...">
+    <input id="searchInput" type="text" placeholder="Procurar por...">
   </div>
 
-  <div class="user-profile clearfix">
-    <div class="dropdown al-user-profile">
-      <a class="profile-toggle-link dropdown-toggle" id="user-profile-dd" data-toggle="dropdown" aria-expanded="false">
-        <img src="{{ ( 'Nasta' | baProfilePicture ) }}">
-      </a>
-      <ul class="dropdown-menu top-dropdown-menu profile-dropdown" aria-labelledby="user-profile-dd">
-        <li class="dropdown-item"><i class="dropdown-arr"></i></li>
-        <li class="dropdown-item"><a href><i class="fa fa-user"></i>Profile</a></li>
-        <li class="dropdown-item"><a href><i class="fa fa-cog"></i>Settings</a></li>
-        <li class="dropdown-item"><a href class="signout"><i class="fa fa-power-off"></i>Sign out</a></li>
-      </ul>
+  <div class="user-profile clearfix" align="right">
+    <a href="http://localhost:3000/#/pages/tela1">
+     <img src="{{ ( 'inicio' | baProfilePicture ) }}" width="35px" height="35px"> Início
+    </a>
+
+    <a href="http://localhost:3000/#/pages/tela2">
+      <img  src="{{ ( 'dados-dos-municipios' | baProfilePicture ) }}" width="20px" height="20px"> Dados dos Municípios
+    </a>
+
+    <a href="http://localhost:3000/#/pages/tela3">
+     <img   src="{{ ( 'inspecoes' | baProfilePicture ) }}" width="35px" height="35px"> Inspeções
+    </a>
+
+    <a href="http://localhost:3000/#/pages/tela4">
+      <img src="{{ ( 'ajuda' | baProfilePicture ) }}" width="35px" height="35px"> Ajuda
+    </a>
+
+    <a href="https://www.mds.gov.br/">
+      <img src="{{ ( 'sitio-mds' | baProfilePicture ) }}" width="25px" height="25px"> MDS
+    </a>
     </div>
-    <ba-msg-center></ba-msg-center>
+
   </div>
-</div>
+

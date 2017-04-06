@@ -3,10 +3,58 @@ export const PAGES_MENU = [
     path: 'pages',
     children: [
       {
-        path: 'dashboard',
+        path: '',
         data: {
           menu: {
             title: 'Dashboard',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
+        path: 'tela1',
+        data: {
+          menu: {
+            title: 'Início',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
+        path: 'tela2',
+        data: {
+          menu: {
+            title: 'Dados dos Municípios',
+            icon: 'ion-connection-bars',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
+        path: 'tela3',
+        data: {
+          menu: {
+            title: 'Inspeções',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
+        path: 'tela4',
+        data: {
+          menu: {
+            title: 'Ajuda',
             icon: 'ion-android-home',
             selected: false,
             expanded: false,
@@ -317,8 +365,8 @@ export const PAGES_MENU = [
         path: '',
         data: {
           menu: {
-            title: 'External Link',
-            url: 'http://akveo.com',
+            title: 'MPRJ',
+            url: 'http://www.mprj.mp.br/',
             icon: 'ion-android-exit',
             order: 800,
             target: '_blank'

@@ -1,0 +1,44 @@
+.box {
+  width: 10px;
+  float: right;
+  height: 60px; /*Altura da linha */
+}
+
+.linha-vertical {
+  border-left: 2px solid; /*  Adiciona borda esquerda na div como ser fosse uma linha.*/
+  box-sizing: border-box;
+}
+
+.alinhadir{
+  text-align:right;
+  width:20%;
+
+}
+
+.alinhaesq{
+  text-align: left;
+  width: 20%;
+
+}
+.alinhacentro{
+  font-size: 110%;
+  text-align: center;
+}
+
+.equipamento{
+  color:lightgray;
+}
+
+.parágrafo{
+  color:white;
+}
+
+.parágrafo-alinhadir{
+  color:white;
+  text-align:right;
+  width:20%;
+}
+
+hr{
+ color: white;
+}
