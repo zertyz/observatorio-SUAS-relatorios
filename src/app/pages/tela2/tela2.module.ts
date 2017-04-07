@@ -43,6 +43,8 @@ import { DadosMunicipais } from './dadosMunicipais/dadosMunicipais.component';
 
 import { MapaEstadual } from './mapa-estadual/mapa-estadual.component';
 
+import { IndicadoresOrcamentarios } from './indicadoresOrcamentarios/indicadoresOrcamentarios.component';
+
 
 @NgModule({
   imports: [
@@ -76,6 +78,7 @@ import { MapaEstadual } from './mapa-estadual/mapa-estadual.component';
     AnoButtons,
     DadosMunicipais,
     MapaEstadual,
+    IndicadoresOrcamentarios,
 
   ],
   providers: [

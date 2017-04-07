@@ -1,10 +1,11 @@
 .alinhadir{
   text-align:right;
+  color: #00003d;
 }
 
  .alinhaesq{
    text-align: left;
-
+   color: #00003d;;
  }
  .alinhacentro{
    text-align: center;
@@ -35,27 +36,47 @@
   font-family: "Arial Black", arial-black;
   font-size: 15px;
   color: orange;
+  background-color: blue;
 }
 
 .equipamentos{
   font-family: "Arial Black", arial-black;
-  font-size: 15px;
-  color:#212121 ;
+  font-size: 20px;
+  color: #1d1d1d;
   text-align: center;
 
 }
 
  .municipio{
    font-family: "Arial Black", arial-black;
-   font-size: 15px;
-   color: #212121 ;
+   font-size: 18px;
+   color: #1d1d1d;
 
  }
 
 
 hr{
   border: 1px solid;
-  margin-top: auto;
-  margin-left: 73%;
-  width:28%;
+  margin-top: 0%;
+  width: 170%;
+
+  color: #00003d;
+}
+
+table{
+  color: #00003d;
+  opacity: 0.8;
+  font-weight: bold;
+
+}
+
+
+.alinha-equipamentos{
+  text-align: left;
+  font-size: 11px;
+  color: #00003d;
+
+
+
+
 }

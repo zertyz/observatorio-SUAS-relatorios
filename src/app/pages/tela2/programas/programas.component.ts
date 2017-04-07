@@ -41,7 +41,7 @@ export class Programas {
         },
         barColor: jQuery(this).attr('data-rel'),
         trackColor: 'rgba(0,0,0,0)',
-        size: 84,
+        size: 50,
         scaleLength: 0,
         animation: 2000,
         lineWidth: 9,
