@@ -5,7 +5,7 @@ import { NgaModule } from '../../theme/nga.module';
 
 import { routing }       from './ui.routing';
 import { DropdownModule, ModalModule } from 'ng2-bootstrap';
-imhttp://localhost:3000/port { Ui } from './ui.component';
+import { Ui } from './ui.component';
 import { Buttons } from './components/buttons/buttons.component';
 import { Grid } from './components/grid/grid.component';
 import { Icons } from './components/icons/icons.component';
