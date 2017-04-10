@@ -1,10 +1,11 @@
 #barra-de-rolagem {
-  width:300px;
-  height:200px;
+  width:230px;
+  height:180px;
   background-color: white;
-  opacity:0.7;
-  overflow: auto;
-  float:right;
+  opacity: 0.7;
+  overflow-y:auto;
+  overflow-x: hidden;
+  float: none;
 }
 
 ul {

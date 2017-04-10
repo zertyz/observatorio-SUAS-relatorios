@@ -93,20 +93,24 @@
 }
 
 p{
-  font-size: 13px;
+  color: #1d1d1d;
+  font-size: 15px;
+  font-weight: bold;
 }
+
+h5{
+  color: #1d1d1d;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: right;
+}
+
 .utilizado{
-  color: #00cd00;
+  color: #25753a;
 }
 
 .nao-utilizado{
-  color:#550000;
+  color: #8f2420;
 }
 
-.centro{
-  margin-left: 60px;
-}
 
-table{
-  text-align: center;
-}

@@ -38,20 +38,25 @@ export class Pse {
         },
         barColor: jQuery(this).attr('data-rel'),
         trackColor: 'rgba(0,0,0,0)',
-        size: 50,
+        size: 70,
         scaleLength: 0,
         animation: 2000,
         lineWidth: 9,
         lineCap: 'round',
       });
+
+
     });
   }
 
   private _updatePieCharts() {
+
     let getRandomArbitrary = (min, max) => { return Math.random() * (max - min) + min; };
 
     jQuery('.pie-charts .chart').each(function(index, chart) {
       jQuery(chart).data('easyPieChart').update(getRandomArbitrary(0, 100));
-    });
+    })
+
+    ;
   }
 }

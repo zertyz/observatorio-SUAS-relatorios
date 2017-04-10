@@ -3,29 +3,23 @@
     <p> 146.835,10 </p>
     <hr>
 
-    <p>  38.334,04 </p>
+    <p class="utilizado">  38.334,04 </p>
     <hr>
 
-    <p>  108.501,06 </p>
-    <hr>
+    <p class="nao-utilizado">  108.501,06 </p>
+
 </div>
 
-<div class="centro">
+<div>
   <div class="row pie-charts">
-    <div *ngFor="let chart of charts" class="pie-chart-item-container col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
-
+    <div *ngFor="let chart of charts" class="pie-chart-item-container col-xlg-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
       <div class="pie-chart-item">
-
         <div class="chart" [attr.data-rel]="chart.color" data-percent="60">
           <span class="percent"></span>
         </div>
-
-        <div class="description">
-          <div>{{ chart.description }}</div>
-          <div class="description-stats">{{ chart.stats }}</div>
-        </div>
-        <i class="chart-icon i-{{ chart.icon }}"></i>
       </div>
+
     </div>
   </div>
 </div>
+
