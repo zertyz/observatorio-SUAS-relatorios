@@ -45,6 +45,8 @@ import { MapaEstadual } from './mapa-estadual/mapa-estadual.component';
 
 import { IndicadoresOrcamentarios } from './indicadoresOrcamentarios/indicadoresOrcamentarios.component';
 
+import { IndicadoresOrcamentariosLegenda } from './indicadoresOrcamentariosLegenda/indicadoresOrcamentarios.component';
+
 
 @NgModule({
   imports: [
@@ -79,6 +81,7 @@ import { IndicadoresOrcamentarios } from './indicadoresOrcamentarios/indicadores
     DadosMunicipais,
     MapaEstadual,
     IndicadoresOrcamentarios,
+    IndicadoresOrcamentariosLegenda,
 
   ],
   providers: [

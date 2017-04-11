@@ -1,44 +1,34 @@
-.box {
-  width: 10px;
-  float: right;
-  height: 60px; /*Altura da linha */
-}
 
-.linha-vertical {
-  border-left: 2px solid; /*  Adiciona borda esquerda na div como ser fosse uma linha.*/
-  box-sizing: border-box;
-}
 
-.alinhadir{
-  text-align:right;
-  width:20%;
-
-}
-
-.alinhaesq{
-  text-align: left;
-  width: 20%;
-
-}
 .alinhacentro{
   font-size: 110%;
   text-align: center;
 }
 
 .equipamento{
-  color:lightgray;
+  color:#00003d;
+  font-weight: bold;
 }
 
 .parágrafo{
-  color:white;
+  color:#000000;
+  font-weight: normal;
 }
 
-.parágrafo-alinhadir{
-  color:white;
-  text-align:right;
-  width:20%;
-}
 
 hr{
  color: white;
 }
+
+.cabeçalho{
+  font-size: 15px;
+  color: #00003d;
+  font-weight: bold;
+  background-color:steelblue;
+}
+
+table{
+  background-color: #c1ccc8;
+  opacity: 0.9;
+}
+

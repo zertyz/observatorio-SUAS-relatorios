@@ -11,8 +11,9 @@
 
 .alinhadir{
   text-align:right;
-  width:20%;
+  width:10%;
   float: right;
+
 
 }
 
@@ -25,12 +26,14 @@
   text-align: left;
   width: 20%;
   color: #00003d;
+  font-weight: bold;
   background-color:steelblue;
 
 }
 .alinhacentro{
   font-size: 110%;
   text-align: center;
+  margin-top: 0px;
 }
 
 table{
@@ -58,6 +61,5 @@ table{
 
 hr{
   border: 1px solid;
-  margin-top: auto;
-
+  margin-top: 0px;
 }
