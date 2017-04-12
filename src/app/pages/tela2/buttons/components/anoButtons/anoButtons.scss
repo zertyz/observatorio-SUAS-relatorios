@@ -1,12 +1,11 @@
-#barra-de-rolagem {
-  width:50px;
+#barra-de-rolar {
+  width:20px;
   height:50px;
   background-color: white;
-  opacity: 0.7;
   overflow-y:auto;
   overflow-x: hidden;
   float: none;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 ul {
@@ -14,12 +13,12 @@ ul {
   list-style: none;
 }
 ul li {
-  width: 300px;
+  width: 20px;
   text-align: left;
 
 }
 ul li a{
-  padding: 5px;
+
   text-decoration: none;
   color:slategray;
 
@@ -37,9 +36,9 @@ ul li:hover ul {
 }
 
 span{
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
-  color: #1d1d1d;
-
+  color: #000000;
+  margin-top: 10px;
 }
 

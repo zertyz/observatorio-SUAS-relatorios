@@ -1,15 +1,17 @@
-<div class="horizontal-scroll">
-  <table class="tabela" width="50%" border="0">
+<div class="horizontal-scroll" >
+  <table class="tabela" width="40%" border="0">
     <thead>
     <tr class="black-muted-bg">
-      <th colspan="4" class="cabeçalho"> LISTA DE EQUIPAMENTOS DA ASSISTÊNCIA SOCIAL </th>
+      <th colspan="3" class="cabeçalho" height="20px"> LISTA DE EQUIPAMENTOS DA ASSISTÊNCIA SOCIAL </th>
+    </tr>
+
+    <tr>
+      <e-buttons></e-buttons>
     </tr>
     </thead>
 
+    <div id="barra-de-rolar">
 <tbody>
-<tr>
-  <e-buttons></e-buttons>
-</tr>
     <tr>
       <ba-card class="col-xlg-6 col-xl-6 col-lg-6 col-sm-6 col-xs-6">
         <td class="equipamento">
@@ -39,10 +41,10 @@
       <ba-card class="col-xlg-6 col-xl-6 col-lg-6 col-sm-6 col-xs-6">
         <td class="equipamento">
         <img src="{{ ( 'equipamento'| baProfilePicture ) }}" width="30" height="25" > CRAS - AREAL
-        <p class="parágrafo"> Rua Teresópolis, 52 - Areal - Barra do Piraí </p>
+        <p class="parágrafo"> Rua Teresópolis, 52 - Areal - <br> Barra do Piraí </p>
           <p class="parágrafo"> <i class="ion-email"></i> 27.150-090
             <img src="{{ ( 'telefone'| baProfilePicture ) }}" width="12" height="12"> 24 2445-1546</p>
-                  Porte <p class="parágrafo"> PEQUENO </p>
+                  <br> Porte <p class="parágrafo"> PEQUENO </p>
         </td>
       </ba-card>
 
@@ -57,6 +59,7 @@
       </ba-card>
     </tr>
 </tbody>
+    </div>
   </table>
 
 </div>
