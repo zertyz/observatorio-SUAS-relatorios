@@ -1,3 +1,27 @@
+<style>
+  div{
+    color: #000000;
+  }
+
+  h4{
+    color: #000000;
+
+    span{
+      color: #000000;
+    }
+
+
+  #barra-de-rolagem {
+    width:300px;
+    height:300px;
+    background-color: white;
+    overflow: auto;
+    float:none;
+  }
+
+</style>
+
+
 <hr color="white">
 
 <div class="button-wrapper">
@@ -16,13 +40,13 @@
   <div class="row">
     <ba-card class="col-xlg-6 col-xl-0"
              title=" NOVA INSPEÇÃO " baCardClass="small-card">
-      <b><h4> <td> <img src="{{ ( 'inspeção'| baProfilePicture ) }}" width="60" height="55">&nbsp;INICIAR UMA NOVA INSPEÇÃO EM UM ESTABELECIMENTO.</h4></b>
+      <b><h4> <td> <img src="{{ ( 'inspecoes'| baProfilePicture ) }}" width="60" height="55">&nbsp;INICIAR UMA NOVA INSPEÇÃO EM UM ESTABELECIMENTO.</h4></b>
     </ba-card>
 
 
     <ba-card class="col-xlg-6 col-xl-0"
              title="VISUALIZAÇÃO DE INSPEÇÕES - FILTROS PARA SELEÇÃO" baCardClass="small-card">
-      <b> <h4> <img src="{{ ( 'filtro'| baProfilePicture ) }}" width="45" height="45">&nbsp;&nbsp;OS CAMPOS COM (*) SÃO CONSIDERADOS OBRIGATÓRIOS.</h4></b>
+      <b> <h4> <img src="{{ ( 'filtroo'| baProfilePicture ) }}" width="45" height="45">&nbsp;&nbsp;OS CAMPOS COM (*) SÃO CONSIDERADOS OBRIGATÓRIOS.</h4></b>
     </ba-card>
   </div>
 
@@ -34,7 +58,7 @@
 
     <html lang="pt-br">
     <form>
-      <b> <h4> <img src="{{ ( 'Calendário'| baProfilePicture ) }}" width="45" height="45">&nbsp;INÍCIO:&nbsp; <input type="date" name="mydate"> </h4> </b>
+      <b> <h4> <img src="{{ ( 'calendário'| baProfilePicture ) }}" width="45" height="45">&nbsp;INÍCIO:&nbsp; <input type="date" name="mydate"> </h4> </b>
     </form>
     &nbsp;
     </html>
@@ -78,12 +102,12 @@
             &nbsp;<button addtogleclass="true" class="btn btn-raised dropdown-toggle" dropdownToggle="" type="button" ng-reflect-add-toggle-class="true" aria-haspopup="true">
               <b>MACAÉ</b>
             </button>
-            <ul class="dropdown-menu" dropdownMenu>
+            <ul class="dropdown-menu" dropdownMenu id="barra-de-rolagem">
               <li class="dropdown-item"><a href="#"> A </a></li>
               <li class="dropdown-divider"></li>
               <li class="dropdown-item"><a> Aperibé</a></li>
               <li class="dropdown-item"><a> Araruama </a></li>
-              <li class="dropdown-item"><a href="#"> Areal </a></li>
+              <li class="dropdown-item"><a> Areal </a></li>
               <li class="dropdown-item"><a href="#"> Armação dos Búzios </a></li>
               <li class="dropdown-item"><a href="#"> Arraial do Cabo </a></li>
               <li class="dropdown-divider"></li>
@@ -346,7 +370,7 @@
               <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIM</b></td>
           </tr>
 
-          <hr color="white">
+          <hr color="grey">
 
           <tr>
             <h4> <td bgcolor="#1e90ff"><b>EIXO PROGRAMAS, PROJETOS, SERVIÇOS E BENEFÍCIOS.</b></td> </h4>
@@ -400,7 +424,7 @@
             <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td bgcolor="#d2691e">NÃO</b></td>
           </tr>
 
-          <hr color="white">
+          <hr color="grey">
 
           <tr>
             <h4><td bgcolor="#1e90ff"><b>EIXO INFRAESTRUTURA</b></td></h4>
@@ -425,7 +449,7 @@
           </tr>
 
           <tr>
-            <hr color="white">
+            <hr color="grey">
 
           </tr>
           </tbody>
@@ -442,19 +466,19 @@
 
   <ba-card class="col-xl-3 col-xlg-3"
   title="" baCardClass="medium-card">
-  <img src="{{ ( 'questão'| baProfilePicture ) }}" width="45" height="45"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn-primary"><td><b><h3>QUESTÃO</h3></b></td></span>
+  <img src="{{ ( 'Questão'| baProfilePicture ) }}" width="45" height="45"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn-primary"><td><b><h3>QUESTÃO</h3></b></td></span>
   <h4>&nbsp;&nbsp;A equipe está em conformidade com a nobrh? </h4>
 
-  <hr color="white">
+  <hr color="grey">
 
-  <img src="{{ ( 'paleta'| baProfilePicture ) }}" width="45" height="45"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn-primary"><td><b><h3>REGRA DE COLORAÇÃO</h3></b></td></span>
+  <img src="{{ ( 'Paleta'| baProfilePicture ) }}" width="45" height="45"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn-primary"><td><b><h3>REGRA DE COLORAÇÃO</h3></b></td></span>
 
   <h4>Se o CRAS for de porte grande (5000 famílias) e a quantidade de técnicos de nível superior for menor
   que 2 assistentes sociais, 1 psicólogo, e 1 profissional que compõe o SUAS ou a quantidade de técnicos
   de nível médio for menor que 4: Vermelho. </h4>
 
-  <hr color="white">
-  <img src="{{ ( 'legislacao'| baProfilePicture ) }}" width="45" height="45"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn-primary"> <td><h3>LEGISLAÇÃO</h3></td></span>
+  <hr color="grey">
+  <img src="{{ ( 'Legislacao'| baProfilePicture ) }}" width="45" height="45"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn-primary"> <td><h3>LEGISLAÇÃO</h3></td></span>
   <h4>Resolução nobrh/suas nº 01 de 25 de janeiro de 2017.</h4>
 
 
