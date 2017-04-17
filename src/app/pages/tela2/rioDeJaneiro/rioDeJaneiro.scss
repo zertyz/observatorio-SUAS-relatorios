@@ -10,11 +10,7 @@
 }
 
 .alinhadir{
-  text-align:right;
-  width:10%;
-  float: right;
-
-
+  text-align: right;
 }
 
 .alinhaesq{
@@ -45,7 +41,9 @@ table{
   hr{
     color: gray;
     opacity: 0.1;
-    width: 200%;
+    width: 210%;
+    border: 1px solid;
+    margin-top: 0px;
   }
 
 }
@@ -55,11 +53,19 @@ table{
 }
 .dados{
   font-family: "Arial Black", arial-black;
-  font-size: 15px;
+  font-size: 16px;
   color:midnightblue;
 }
 
-hr{
-  border: 1px solid;
-  margin-top: 0px;
+
+.borda-td-left {
+  border-left: 1px solid gray;
+}
+
+.borda-td-dir {
+  border-right: 1px solid gray;
+}
+
+.borda-td-top {
+  border-top: 1px solid gray;
 }
