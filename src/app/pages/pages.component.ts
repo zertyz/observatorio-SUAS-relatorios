@@ -17,9 +17,9 @@ import { PAGES_MENU } from './pages.menu';
     
    
     <footer class="al-footer clearfix">
-      <div class="al-footer-right"> 2017 &copy; Todos os direitos reservados </div>
+      <div class="al-footer-right"> 2017 &copy; Todos os direitos reservados. </div>
       <div class="al-footer-main clearfix">
-        <div class="al-copy"> <a href="http://www.mprj.mp.br/"> MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO</a> </div>
+        <div class="al-copy"> <a href="http://www.mprj.mp.br/"><b><h4> MINISTÉRIO PÚBLICO DO ESTADO DO RIO DE JANEIRO</h4></b></a> </div>
         <ul class="al-share clearfix">
           <li><a href="https://pt-br.facebook.com/MPRJ.Oficial" target="_blank"> <i class="socicon socicon-facebook"></i></a></li>
           <li><a href="https://twitter.com/mp_rj" target="_blank"> <i class="socicon socicon-twitter"></i></a></li>
