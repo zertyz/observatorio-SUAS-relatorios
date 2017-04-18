@@ -59,7 +59,7 @@ $hoverlink: $primary-dark;
 @mixin body-bg() {
   background-color: $body-bg;
 
-  $mainBgUrl: $images-root + 'azul.png';
+  $mainBgUrl: $images-root + 'Sem título.png';
 
   &::before {
     content: '';
