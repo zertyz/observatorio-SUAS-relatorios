@@ -36,19 +36,22 @@ import { DropdownButtons } from './buttons/components/dropdownButtons';
 import { GroupButtons } from './buttons/components/groupButtons';
 import { EButtons } from './buttons/components/equipamentoButtons';
 
-import { ChartistJs } from './chartistJs'
-import { ChartistJsService } from './chartistJs/chartistJs.service'
+import { ChartistJs } from './chartistJs';
+import { ChartistJsService } from './chartistJs/chartistJs.service';
 
-import { ContextualTable } from './contextualTable'
+import { ContextualTable } from './contextualTable';
 
-import { PecasAtuacaoTable} from './pecasAtuacao'
-import { PecasAtuacaoService} from './pecasAtuacao/pecasAtuacao.service'
+import { PecasAtuacaoTable} from './pecasAtuacao';
+import { PecasAtuacaoService} from './pecasAtuacao/pecasAtuacao.service';
 
-import { LegislacaoTable } from './legislacao'
-import { LegislacaoService } from './legislacao/legislacao.service'
+import { LegislacaoTable } from './legislacao';
+import { LegislacaoService } from './legislacao/legislacao.service';
 
-import { OrcamentoTable } from './orcamento'
-import { OrcamentoService } from './orcamento/orcamento.service'
+import { OrcamentoTable } from './orcamento';
+import { OrcamentoService } from './orcamento/orcamento.service';
+
+import { CapacidadeAtendimentoTable } from './capacidadeAtendimento';
+import { CapacidadeAtendimentoService } from './capacidadeAtendimento/capacidadeAtendimento.service';
 
 @NgModule({
   imports: [
@@ -85,6 +88,7 @@ import { OrcamentoService } from './orcamento/orcamento.service'
     PecasAtuacaoTable,
     LegislacaoTable,
     OrcamentoTable,
+    CapacidadeAtendimentoTable,
 
 
   ],
@@ -100,6 +104,7 @@ import { OrcamentoService } from './orcamento/orcamento.service'
     PecasAtuacaoService,
     LegislacaoService,
     OrcamentoService,
+    CapacidadeAtendimentoService,
 
 
   ]
