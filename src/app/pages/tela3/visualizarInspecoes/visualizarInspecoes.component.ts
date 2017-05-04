@@ -4,12 +4,12 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'ajuda-button',
-  templateUrl: './ajudaButton.html'
+  selector: 'visualizar-inspecoes',
+  templateUrl: './visualizarInspecoes.html'
 })
 
 // TODO: appendToBody does not implemented yet, waiting for it
-export class AjudaButton {
+export class VisualizarInspecoes {
 
   constructor() {
   }

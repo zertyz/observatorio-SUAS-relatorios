@@ -24,7 +24,11 @@ import { AnoButtons } from './buttons/components/anoButtons';
 import { InicioButton } from './buttons/components/inicioButton';
 import { AjudaButton } from './buttons/components/ajudaButton';
 import { LimparFiltroButton } from './buttons/components/limpar-filtroButton';
-import {BuscarButton } from './buttons/components/buscarButton';
+import { BuscarButton } from './buttons/components/buscarButton';
+
+import { NovaInspecao } from './novaInspecao/novaInspecao.component';
+
+import { VisualizarInspecoes } from './visualizarInspecoes/visualizarInspecoes.component';
 
 
 @NgModule({
@@ -36,7 +40,6 @@ import {BuscarButton } from './buttons/components/buscarButton';
 
   ],
   declarations: [
-
     Tela3,
     Buttons,
     FlatButtons,
@@ -54,6 +57,8 @@ import {BuscarButton } from './buttons/components/buscarButton';
     AjudaButton,
     LimparFiltroButton,
     BuscarButton,
+    NovaInspecao,
+    VisualizarInspecoes,
 
   ]
 
