@@ -1,13 +1,13 @@
 import {Component, HostListener} from '@angular/core';
 
 @Component({
-  selector: 'e-buttons',
-  styleUrls:['./equipamentoButtons.scss'],
-  templateUrl: './equipamentoButtons.html'
+  selector: 'tipo-inspecao-button',
+  styleUrls:['./tipoInspecaoButton.scss'],
+  templateUrl: './tipoInspecaoButton.html'
 })
 
 // TODO: appendToBody does not implemented yet, waiting for it
-export class EButtons {
+export class TipoInspecaoButton {
 
   constructor() {
   }

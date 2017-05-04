@@ -18,7 +18,7 @@ import { IconButtons } from './buttons/components/iconButtons';
 import { LargeButtons } from './buttons/components/largeButtons';
 import { DropdownButtons } from './buttons/components/dropdownButtons';
 import { GroupButtons } from './buttons/components/groupButtons';
-import { EButtons } from './buttons/components/equipamentoButtons';
+import { TipoInspecaoButton } from './buttons/components/tipoInspecaoButton';
 import { MunicipiosButtons } from './buttons/components/municipiosButtons'
 import { AnoButtons } from './buttons/components/anoButtons';
 import { InicioButton } from './buttons/components/inicioButton';
@@ -50,7 +50,7 @@ import { VisualizarInspecoes } from './visualizarInspecoes/visualizarInspecoes.c
     LargeButtons,
     DropdownButtons,
     GroupButtons,
-    EButtons,
+    TipoInspecaoButton,
     MunicipiosButtons,
     AnoButtons,
     InicioButton,
