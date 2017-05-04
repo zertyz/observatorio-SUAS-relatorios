@@ -1,7 +1,6 @@
 .basic-btns {
   padding-top: 8px;
   margin-bottom: -8px;
-
   h5 {
     line-height: 35px;
     font-size: 12px;
@@ -133,3 +132,18 @@ $btn-icon-size: 34px;
 .btn-group.flex-dropdown {
   display: flex;
 }
+
+#scroll {
+  width:250px;
+  height:150px;
+  background-color: transparent;
+  overflow: auto;
+}
+
+#barra {
+  width:180px;
+  height:100px;
+  background-color: transparent;
+  overflow: auto;
+}
+
