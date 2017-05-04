@@ -23,6 +23,8 @@ import { MunicipiosButtons } from './buttons/components/municipiosButtons'
 import { AnoButtons } from './buttons/components/anoButtons';
 import { InicioButton } from './buttons/components/inicioButton';
 import { AjudaButton } from './buttons/components/ajudaButton';
+import { LimparFiltroButton } from './buttons/components/limpar-filtroButton';
+import {BuscarButton } from './buttons/components/buscarButton';
 
 
 @NgModule({
@@ -50,6 +52,8 @@ import { AjudaButton } from './buttons/components/ajudaButton';
     AnoButtons,
     InicioButton,
     AjudaButton,
+    LimparFiltroButton,
+    BuscarButton,
 
   ]
 
